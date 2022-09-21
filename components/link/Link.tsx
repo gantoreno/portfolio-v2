@@ -4,12 +4,13 @@ import styles from "./Link.module.css"
 
 type LinkProps = NextLinkProps & {
   children: React.ReactNode
+  target?: string
 }
 
-const Link: React.FC<LinkProps> = ({ href, children }) => {
+const Link: React.FC<LinkProps> = ({ href, children, target = "_blank" }) => {
   return (
     <NextLink href={href}>
-      <a className={styles.link} rel="noopener noreferrer" target="_blank">
+      <a className={styles.link} rel="noopener noreferrer" target={target}>
         {children}
         <span className={styles.pointer}> ↗</span>
       </a>
