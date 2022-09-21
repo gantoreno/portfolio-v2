@@ -1,0 +1,33 @@
+.timeline {
+  padding-left: calc(1rem + 4.5px);
+  position: relative;
+  margin-bottom: var(--spacing-minor);
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: var(--border-radius);
+  height: calc(100% - 1rem);
+  background: var(--foreground);
+  border-radius: var(--border-radius);
+}
+
+.timelineItem {
+  position: relative;
+}
+
+.timelineItem::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -1.47rem;
+  width: calc(var(--border-radius) * 3);
+  height: calc(var(--border-radius) * 3);
+  background-color: var(--foreground);
+  z-index: 10;
+  rotate: 45deg;
+  border-radius: var(--border-radius);
+}

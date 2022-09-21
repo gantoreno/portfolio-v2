@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans+Mono");
+
+:root {
+  --font-family: "Google Sans", sans-serif;
+  --font-family-code: "Google Sans Mono", monospace;
+
+  --font-size-normal: 1rem;
+  --font-size-code: calc(var(--font-size-normal) - 2px);
+
+  --font-size-heading-1: 2.5rem;
+  --font-size-heading-2: 2rem;
+  --font-size-heading-3: 1.75rem;
+  --font-size-heading-4: 1.5rem;
+  --font-size-heading-5: 1.25rem;
+  --font-size-heading-6: 1rem;
+
+  --transition-duration: 200ms;
+  --border-radius: 3px;
+  --container-width: 550px;
+  --line-height: 1.5em;
+
+  --spacing-minor: 2rem;
+  --spacing-major: 4rem;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-gray-0: #000000;
+  --color-gray-1: #111111;
+  --color-gray-2: #222222;
+  --color-gray-3: #333333;
+  --color-gray-4: #444444;
+  --color-gray-5: #555555;
+  --color-gray-6: #666666;
+  --color-gray-7: #777777;
+  --color-gray-8: #888888;
+  --color-gray-9: #999999;
+  --color-gray-10: #aaaaaa;
+  --color-gray-11: #bbbbbb;
+  --color-gray-12: #cccccc;
+  --color-gray-13: #dddddd;
+  --color-gray-14: #eeeeee;
+  --color-gray-15: #ffffff;
+
+  --foreground: var(--color-black);
+  --background: var(--color-white);
+
+  --text-foreground: var(--color-gray-4);
+  --emphasized-foreground: var(--color-gray-0);
+  --disabled-foreground: var(--color-gray-8);
+
+  --soft-background: var(--color-gray-14);
+
+  --selection-background: #00000021;
+
+  --navbar-background: #ffffffaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height);
+}
+
+*::selection {
+  background: var(--selection-background);
+}
+
+html,
+body {
+  color: var(--text-foreground);
+  background: var(--background);
+  font-family: var(--font-family);
+}
+
+body.dark-mode {
+  --foreground: var(--color-white);
+  --background: var(--color-black);
+
+  --text-foreground: var(--color-gray-11);
+  --emphasized-foreground: var(--color-gray-15);
+  --disabled-foreground: var(--color-gray-7);
+
+  --soft-background: var(--color-gray-1);
+
+  --selection-background: #ffffff21;
+
+  --navbar-background: #000000aa;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+code {
+  font-family: var(--font-family-code);
+}
+
+footer {
+  color: var(--footer-foreground);
+}
+
+i {
+  font-family: "NerdFontsSymbols Nerd Font";
+  color: var(--emphasized-foreground);
+}
+
+@media screen and (max-width: calc(550px + 2rem)) {
+  :root {
+    --container-width: calc(100vw - 2rem);
+  }
+}

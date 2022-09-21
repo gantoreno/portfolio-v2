@@ -1,0 +1,7 @@
+.section {
+  margin-bottom: var(--spacing-major);
+}
+
+.block {
+  margin-bottom: var(--spacing-minor);
+}

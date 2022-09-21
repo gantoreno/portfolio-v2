@@ -1,0 +1,32 @@
+.code {
+  color: var(--foreground);
+  font-size: var(--font-size-code);
+}
+
+.quote {
+  font-family: inherit;
+  user-select: none;
+}
+
+.codeBlock {
+  margin-bottom: var(--spacing-minor);
+}
+
+.compact {
+  margin-bottom: 0;
+}
+
+.codeBlock span {
+  border-radius: var(--border-radius) !important;
+}
+
+.codeBlock span code {
+  padding: 1rem !important;
+  font-family: var(--font-family-code) !important;
+  font-size: var(--font-size-code) !important;
+}
+
+.codeBlock span code span {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-code);
+}

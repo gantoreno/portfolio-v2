@@ -1,0 +1,31 @@
+.experience {
+  display: flex;
+  gap: 1rem;
+}
+
+.year {
+  color: var(--disabled-foreground);
+  min-width: 70px;
+}
+
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+.wrapper.compact {
+  margin-bottom: 0;
+}
+
+.company {
+  color: var(--emphasized-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  color: var(--disabled-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--text-foreground);
+}

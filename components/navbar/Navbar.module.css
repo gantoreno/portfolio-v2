@@ -1,0 +1,37 @@
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--navbar-background);
+  backdrop-filter: blur(1rem);
+  z-index: 20;
+}
+
+.logo {
+  fill: var(--foreground);
+  height: 3rem;
+  cursor: pointer;
+}
+
+.content {
+  padding: 1rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.icon {
+  cursor: pointer;
+  user-select: none;
+  color: var(--emphasized-foreground);
+}

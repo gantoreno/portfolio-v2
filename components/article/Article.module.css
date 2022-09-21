@@ -1,0 +1,19 @@
+.article {
+  margin-bottom: var(--spacing-minor);
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.date,
+.duration {
+  font-weight: normal;
+  color: var(--disabled-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--text-foreground);
+  margin-bottom: 0.5rem;
+}

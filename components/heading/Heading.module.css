@@ -1,0 +1,38 @@
+.heading {
+  line-height: initial;
+  font-weight: bold;
+  color: var(--emphasized-foreground);
+  margin-bottom: var(--spacing-minor);
+}
+
+.compact {
+  margin-bottom: 0;
+}
+
+.light {
+  color: var(--disabled-foreground);
+}
+
+.heading.level-1 {
+  font-size: var(--font-size-heading-1);
+}
+
+.heading.level-2 {
+  font-size: var(--font-size-heading-2);
+}
+
+.heading.level-3 {
+  font-size: var(--font-size-heading-3);
+}
+
+.heading.level-4 {
+  font-size: var(--font-size-heading-4);
+}
+
+.heading.level-5 {
+  font-size: var(--font-size-heading-5);
+}
+
+.heading.level-6 {
+  font-size: var(--font-size-heading-6);
+}

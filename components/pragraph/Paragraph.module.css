@@ -1,0 +1,37 @@
+.paragraph {
+  color: var(--text-foreground);
+  margin-bottom: var(--spacing-minor);
+}
+
+.compact {
+  margin-bottom: 0;
+}
+
+.expandable {
+  color: var(--text-foreground);
+}
+
+.showMore {
+  color: var(--disabled-foreground);
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  margin-left: 1ch;
+  user-select: none;
+}
+
+.showMore::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  width: 4rem;
+  height: 100%;
+  z-index: 4;
+  background: linear-gradient(to left, var(--background), #00000000);
+}
+
+.readLess::before {
+  background: none;
+}
