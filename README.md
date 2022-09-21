@@ -4,7 +4,7 @@
 
 # Portfolio
 
-Files for the second version of my my personal portfolio, built with [React](https://www.reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+Files for the second version of my my personal portfolio, built with [Next.js](https://nextjs.org/) and deployed with [Vercel](https://vercel.com/solutions/nextjs?utm_source=next-site&utm_medium=banner&utm_campaign=next-website).
 
 ## Scripts
 
