@@ -1,4 +1,5 @@
 import classNames from "classnames"
+
 import styles from "./Quote.module.css"
 
 type QuoteProps = {

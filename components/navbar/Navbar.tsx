@@ -3,9 +3,9 @@ import { BiMoon, BiSun } from "react-icons/bi"
 
 import useDarkMode from "../../hooks/useDarkMode"
 import Center from "../center/Center"
-
 import Container from "../container/Container"
 import Link from "../link/Link"
+
 import styles from "./Navbar.module.css"
 
 const Logo: React.FC = () => {

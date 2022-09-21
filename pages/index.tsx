@@ -15,6 +15,7 @@ import Project from "../components/project/Project"
 import Repository from "../components/repository/Repository"
 import Timeline from "../components/timeline/Timeline"
 
+import Head from "next/head"
 import codework from "../assets/img/codework.png"
 import insightt from "../assets/img/insightt.png"
 import resident from "../assets/img/resident.png"
@@ -24,7 +25,6 @@ import Center from "../components/center/Center"
 import Grid from "../components/grid/Grid"
 import Quote from "../components/quote/Quote"
 import Spacer from "../components/spacer/Spacer"
-import Head from "next/head"
 
 const Home: NextPage = () => {
   return (

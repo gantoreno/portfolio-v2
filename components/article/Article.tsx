@@ -8,7 +8,6 @@ type ArticleProps = {
   description: string
   date: string
   link: string
-  // thumbnail: string;
 }
 
 const Article: React.FC<ArticleProps> = ({

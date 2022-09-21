@@ -1,8 +1,9 @@
 import Image, { StaticImageData } from "next/image"
+
 import Grid from "../grid/Grid"
-import Heading from "../heading/Heading"
 import Link from "../link/Link"
 import Paragraph from "../pragraph/Paragraph"
+
 import styles from "./Project.module.css"
 
 type ProjectProps = {

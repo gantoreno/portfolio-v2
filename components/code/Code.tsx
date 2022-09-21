@@ -1,9 +1,9 @@
+import classNames from "classnames"
 import { CodeBlock as ReactCodeBlock } from "react-code-blocks"
 
 import styles from "./Code.module.css"
 
 import gabriel from "../../themes/gabriel"
-import classNames from "classnames"
 
 type CodeProps = {
   children: React.ReactNode
