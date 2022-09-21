@@ -1,4 +1,3 @@
-import Heading from "../heading/Heading"
 import Link from "../link/Link"
 import Paragraph from "../pragraph/Paragraph"
 
@@ -14,11 +13,7 @@ const Repository: React.FC<RepositoryProps> = ({ name, description, url }) => {
   return (
     <div className={styles.repository}>
       <div>
-        <div className={styles.name}>
-          <Heading level={6} compact>
-            {name}
-          </Heading>
-        </div>
+        <div className={styles.name}>{name}</div>
         <div className={styles.description}>
           <Paragraph compact>{description}</Paragraph>
         </div>

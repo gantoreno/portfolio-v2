@@ -103,6 +103,10 @@ footer {
   color: var(--footer-foreground);
 }
 
+strong {
+  color: var(--emphasized-foreground);
+}
+
 i {
   font-family: "NerdFontsSymbols Nerd Font";
   color: var(--emphasized-foreground);

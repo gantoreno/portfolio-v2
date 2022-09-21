@@ -8,6 +8,7 @@
 .title {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: var(--emphasized-foreground);
 }
 
 .description {

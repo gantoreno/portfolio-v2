@@ -24,10 +24,19 @@ import Center from "../components/center/Center"
 import Grid from "../components/grid/Grid"
 import Quote from "../components/quote/Quote"
 import Spacer from "../components/spacer/Spacer"
+import Head from "next/head"
 
 const Home: NextPage = () => {
   return (
     <Page>
+      <Head>
+        <title>Gabriel Moreno - Welcome</title>
+        <meta
+          name="description"
+          content="Software engineer, full-stack web developer"
+        />
+        <meta name="keyword" content="portfolio, software engineer" />
+      </Head>
       <Navbar />
       <Container>
         <Spacer top="7rem" bottom="8rem">
@@ -295,9 +304,7 @@ const Home: NextPage = () => {
           <Spacer top="6rem" bottom="2rem">
             <Grid columns={[1, 4]}>
               <Center axis="vertical">
-                <Heading level={6} compact>
-                  Follow me
-                </Heading>
+                <strong>Follow me</strong>
               </Center>
               <Spacer align="right">
                 <Spacer inline>

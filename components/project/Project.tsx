@@ -24,11 +24,7 @@ const Project: React.FC<ProjectProps> = ({
     <div className={styles.project}>
       <Grid columns={[2, 1]}>
         <div className={styles.information}>
-          <div className={styles.title}>
-            <Heading level={6} compact>
-              {title}
-            </Heading>
-          </div>
+          <div className={styles.title}>{title}</div>
           <div className={styles.description}>
             <Paragraph.Expandable at={100}>{description}</Paragraph.Expandable>
           </div>

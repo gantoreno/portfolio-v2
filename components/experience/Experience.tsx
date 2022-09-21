@@ -26,7 +26,7 @@ const Experience: React.FC<ExperienceProps> = ({
           [styles.compact]: compact,
         })}
       >
-        {company && <h6 className={styles.company}>{company}</h6>}
+        {company && <div className={styles.company}>{company}</div>}
         {position && <div className={styles.position}>{position}</div>}
         {children && (
           <div className={styles.description}>
