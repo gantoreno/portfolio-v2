@@ -3,7 +3,7 @@ import classNames from "classnames"
 import styles from "./Heading.module.css"
 
 type HeadingProps = {
-  children: string
+  children: React.ReactNode
   level: 1 | 2 | 3 | 4 | 5 | 6
   compact?: boolean
   light?: boolean
