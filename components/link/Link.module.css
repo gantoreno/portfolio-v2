@@ -7,9 +7,12 @@
   font-size: inherit;
 }
 
-.link .pointer {
+.pointer {
   user-select: none;
   font-family: system-ui;
   font-weight: 300;
+  margin-left: 0.25rem;
   color: inherit;
+  display: inline-flex;
+  translate: 0px 0.25rem;
 }
