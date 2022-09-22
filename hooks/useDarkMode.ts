@@ -1,22 +1,11 @@
-import { useEffect } from "react"
-import { useLocalStorage } from "./useLocalStorage"
+import { useContext } from "react"
+
+import { DarkModeContext } from "../providers/DarkModeProvider"
 
 function useDarkMode() {
-  const [darkMode, setDarkMode] = useLocalStorage("dark-mode", false)
+  const [darkMode, toggleDarkMode] = useContext(DarkModeContext)
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode")
-    } else {
-      document.body.classList.remove("dark-mode")
-    }
-  }, [darkMode])
-
-  return [darkMode, toggleDarkMode]
+  return [darkMode, toggleDarkMode] as const
 }
 
 export default useDarkMode

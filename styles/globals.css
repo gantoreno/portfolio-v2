@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
 @import url("https://fonts.googleapis.com/css?family=Google+Sans+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
 :root {
-  --font-family: "Google Sans", sans-serif;
-  --font-family-code: "Google Sans Mono", monospace;
+  --font-family: "Inter", Arial, Helvetica, sans-serif;
+  --font-family-code: "Menlo", "Consolas", "Courier New", Courier, monospace;
 
   --font-size-normal: 1rem;
   --font-size-code: calc(var(--font-size-normal) - 2px);
@@ -51,6 +52,7 @@
   --emphasized-foreground: var(--color-gray-0);
   --disabled-foreground: var(--color-gray-8);
 
+  --soft-foreground: var(--color-gray-1);
   --soft-background: var(--color-gray-14);
 
   --selection-background: #00000021;
@@ -85,6 +87,7 @@ html:has(.dark-mode) {
   --emphasized-foreground: var(--color-gray-15);
   --disabled-foreground: var(--color-gray-7);
 
+  --soft-foreground: var(--color-gray-14);
   --soft-background: var(--color-gray-1);
 
   --selection-background: #ffffff21;
@@ -107,6 +110,11 @@ strong {
 i {
   font-family: "NerdFontsSymbols Nerd Font";
   color: var(--emphasized-foreground);
+}
+
+img[alt="Avatar"] {
+  width: 100% !important;
+  height: auto !important;
 }
 
 @media screen and (max-width: calc(550px + 2rem)) {

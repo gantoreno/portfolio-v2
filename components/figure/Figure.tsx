@@ -24,15 +24,13 @@ const Figure: React.FC<FigureProps> = ({
         [styles.compact]: compact,
       })}
     >
-      <div className={styles.wrapper}>
-        <Image
-          src={src}
-          alt={alt}
-          className={classNames(styles.image, {
-            [styles.full]: full,
-          })}
-        />
-      </div>
+      <Image
+        src={src}
+        alt={alt}
+        className={classNames(styles.image, {
+          [styles.full]: full,
+        })}
+      />
       <figcaption className={styles.caption}>{caption}</figcaption>
     </figure>
   )

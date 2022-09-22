@@ -1,9 +1,10 @@
 import classNames from "classnames"
-import { CodeBlock as ReactCodeBlock } from "react-code-blocks"
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { vs, vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism"
+
+import useDarkMode from "../../hooks/useDarkMode"
 
 import styles from "./Code.module.css"
-
-import gabriel from "../../themes/gabriel"
 
 type CodeProps = {
   children: React.ReactNode
@@ -15,20 +16,14 @@ type CodeBlockProps = {
   compact?: boolean
 }
 
-const Quote = () => <span className={styles.quote}>`</span>
-
 const Code: React.FC<CodeProps> = ({ children }) => {
-  const quoted = (children: React.ReactNode) => {
-    return (
-      <>
-        <Quote />
-        {children}
-        <Quote />
-      </>
-    )
-  }
-
-  return <code className={styles.code}>{quoted(children)}</code>
+  return (
+    <code className={styles.code}>
+      <span className={styles.quote}>`</span>
+      {children}
+      <span className={styles.quote}>`</span>
+    </code>
+  )
 }
 
 const CodeBlock: React.FC<CodeBlockProps> = ({
@@ -36,19 +31,22 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
   language = "text",
   compact = false,
 }) => {
+  const [darkMode, toggleDarkMode] = useDarkMode()
+
   return (
     <div
       className={classNames(styles.codeBlock, {
         [styles.compact]: compact,
       })}
     >
-      <ReactCodeBlock
-        text={code}
+      <SyntaxHighlighter
         language={language}
-        theme={gabriel}
+        style={darkMode ? vscDarkPlus : vs}
         wrapLines={true}
-        showLineNumbers={false}
-      />
+        wrapLongLines={true}
+      >
+        {code}
+      </SyntaxHighlighter>
     </div>
   )
 }

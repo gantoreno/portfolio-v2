@@ -1,11 +1,14 @@
 .figure {
   text-align: center;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
 .image {
   border-radius: var(--border-radius) !important;
   position: relative;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .full {
@@ -20,5 +23,6 @@
 }
 
 .caption {
+  margin-top: var(--spacing-minor);
   color: var(--disabled-foreground);
 }

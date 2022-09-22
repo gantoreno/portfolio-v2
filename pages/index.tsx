@@ -50,7 +50,7 @@ const Home: NextPage = () => {
               </div>
             </Center>
             <Center axis="vertical">
-              <Image src={avatar} alt="Avatar" />
+              <Image src={avatar} alt="Avatar" width={180} height={180} />
             </Center>
           </Grid>
         </Spacer>
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
           </Paragraph>
         </Section>
         <Section>
-          <Heading level={3}>Work &amp; Projects</Heading>
+          <Heading level={3}>Work &amp; projects</Heading>
           <Paragraph>
             For the past 3+ years, I&apos;ve been working really close to known
             companies from around the world, doing web consulting &amp; project
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
               <Experience position="Frontend Engineer" year="Apr 2019">
                 I Redesigned the company&apos;s legacy website by implementing
                 React with Next.js &amp; Scss, worked with the design team to
-                refresh the company&amp;apos;s public image &amp; corporate
+                refresh the company&apos;s public image &amp; corporate
                 identity, as well as the copywriting team for updating their
                 mission, vision, and values, and implemented new visual designs
                 on their customer portal to match it with the company&apos;s
@@ -179,7 +179,7 @@ const Home: NextPage = () => {
           </Paragraph>
         </Section>
         <Section>
-          <Heading level={5}>Commercial &amp; Enterprise</Heading>
+          <Heading level={4}>Commercial &amp; enterprise</Heading>
           <Paragraph>
             These are some of the most remarkable projects I&apos;ve had the
             fortune to develop and see in action:
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
           </Paragraph>
         </Section>
         <Section>
-          <Heading level={5}>Personal &amp; Open Source</Heading>
+          <Heading level={4}>Personal &amp; open source</Heading>
           <Paragraph>
             Open source &amp; side projects are important too. I&apos;ve spent a
             major part of the past couple years working on web development,

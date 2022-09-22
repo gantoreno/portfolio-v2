@@ -1,5 +1,6 @@
 .center {
   display: flex;
+  position: relative;
 }
 
 .horizontal {

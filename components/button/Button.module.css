@@ -17,6 +17,8 @@
 }
 
 .button:disabled {
-  opacity: 0.2;
+  background: var(--soft-background);
+  border: var(--soft-background);
+  color: var(--soft-foreground);
   cursor: initial;
 }
