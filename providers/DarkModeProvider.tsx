@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useLocalStorage } from "../hooks/useLocalStorage"
 
 type DarkMode = [boolean, () => void]
@@ -10,13 +10,20 @@ type DarkModeProviderProps = {
 }
 
 const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
-  const [darkMode, setDarkMode] = useLocalStorage("dark-mode", false)
+  const [prefersDarkMode, setPrefersDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useLocalStorage("dark-mode", () => {
+    try {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+    } catch {
+      return false
+    }
+  })
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
+  const toggleDarkMode = (value: boolean | null = null) => {
+    setDarkMode(value !== null ? value : !darkMode)
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode")
     } else {
