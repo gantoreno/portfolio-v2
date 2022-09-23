@@ -1,6 +1,11 @@
 import classNames from "classnames"
+import { useEffect, useState } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { vs, vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism"
+import {
+  vs,
+  vsDark,
+  vscDarkPlus,
+} from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 import useDarkMode from "../../hooks/useDarkMode"
 
@@ -31,7 +36,16 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
   language = "text",
   compact = false,
 }) => {
-  const [darkMode, toggleDarkMode] = useDarkMode()
+  const [darkMode] = useDarkMode()
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+
+  if (!loaded) {
+    return null
+  }
 
   return (
     <div
@@ -42,8 +56,6 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
       <SyntaxHighlighter
         language={language}
         style={darkMode ? vscDarkPlus : vs}
-        wrapLines={true}
-        wrapLongLines={true}
       >
         {code}
       </SyntaxHighlighter>
