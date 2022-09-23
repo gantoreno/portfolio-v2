@@ -277,10 +277,11 @@ const Home: NextPage = () => {
           </Spacer>
           <Quote icon="💼">
             The code for this portfolio is also hosted on{" "}
-            <Link href="#">GitHub</Link>, and it&apos;s an update from my{" "}
-            <Link href="#">previous</Link> website. Feel free to explore the old
-            one to see how things have changed, as I transitioned towards a more
-            minimalistic approach.
+            <Link href="https://github.com/gantoreno/portfolio-v2">GitHub</Link>
+            , and it&apos;s an update from my{" "}
+            <Link href="https://gantoreno.netlify.app/">previous</Link> website.
+            Feel free to explore the old one to see how things have changed, as
+            I transitioned towards a more minimalistic approach.
           </Quote>
           <Paragraph>
             Want to see more projects? Check out my{" "}
@@ -308,16 +309,16 @@ const Home: NextPage = () => {
               </Center>
               <Spacer align="right">
                 <Spacer inline>
-                  <Link href="#">Twitter</Link>
+                  <Link href="https://twitter.com/gantoreno">Twitter</Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="#">Instagram</Link>
+                  <Link href="https://instagram.com/gantoreno">Instagram</Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="#">GitHub</Link>
+                  <Link href="https://github.com/gantoreno">GitHub</Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="#">LinkedIn</Link>
+                  <Link href="https://linkedin.com/in/gantoreno">LinkedIn</Link>
                 </Spacer>
               </Spacer>
             </Grid>
