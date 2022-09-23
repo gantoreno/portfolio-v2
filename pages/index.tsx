@@ -175,7 +175,7 @@ const Home: NextPage = () => {
           </Timeline>
           <Paragraph>
             Interested in my professional profile? Download my{" "}
-            <Link href="#">resume</Link>.
+            <Link href="/assets/pdf/resume.pdf">resume</Link>.
           </Paragraph>
         </Section>
         <Section>
