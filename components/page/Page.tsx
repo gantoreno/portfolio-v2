@@ -1,7 +1,3 @@
-import classNames from "classnames"
-
-import useDarkMode from "../../hooks/useDarkMode"
-
 import styles from "./Page.module.css"
 
 type PageProps = {
