@@ -1,4 +1,5 @@
 import { default as NextLink } from "next/link"
+import { useEffect, useState } from "react"
 import { BiMoon, BiSun } from "react-icons/bi"
 
 import useDarkMode from "../../hooks/useDarkMode"
@@ -33,7 +34,16 @@ const Logo: React.FC = () => {
 }
 
 const Navbar: React.FC = () => {
+  const [isLoaded, setIsLoaded] = useState(false)
   const [darkMode, toggleDarkMode] = useDarkMode()
+
+  useEffect(() => {
+    setIsLoaded(true)
+  }, [])
+
+  if (!isLoaded) {
+    return null
+  }
 
   const Icon = darkMode ? BiSun : BiMoon
 
