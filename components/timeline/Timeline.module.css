@@ -29,5 +29,5 @@
   background-color: var(--foreground);
   z-index: 10;
   rotate: 45deg;
-  border-radius: var(--border-radius);
+  border-radius: 50%;
 }
