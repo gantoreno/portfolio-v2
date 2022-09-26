@@ -1,14 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "blog.gantoreno.com"
-        }
-      ],
-      "destination": "/blog/:path*"
+      "source": "/blog",
+      "destination": "https://blog.gantoreno.com"
     }
   ]
 }
