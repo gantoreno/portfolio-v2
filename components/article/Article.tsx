@@ -21,8 +21,9 @@ const Article: React.FC<ArticleProps> = ({
     <article className={styles.article}>
       <div className={styles.title}>
         <Heading level={6} compact>
-          {title} <span className={styles.duration}>({duration} min read)</span>
+          {title}
         </Heading>
+        <span className={styles.duration}> ({duration} min read)</span>
       </div>
       <div className={styles.date}>{date}</div>
       <div className={styles.description}>{description}</div>
