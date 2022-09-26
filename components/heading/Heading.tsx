@@ -3,6 +3,7 @@ import slugify from "slugify"
 import Link from "next/link"
 
 import styles from "./Heading.module.css"
+import { BiLink } from "react-icons/bi"
 
 type HeadingProps = {
   id?: string
@@ -36,9 +37,12 @@ const Heading: React.FC<HeadingProps> = ({
       {...rest}
     >
       {linkable ? (
-        <Link href={`#${slug}`}>
-          <a>{children}</a>
-        </Link>
+        <>
+          <BiLink className={styles.icon} size={`${2.5 - level * 0.25}rem`} />
+          <Link href={`#${slug}`}>
+            <a>{children}</a>
+          </Link>
+        </>
       ) : (
         children
       )}

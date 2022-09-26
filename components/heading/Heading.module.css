@@ -19,14 +19,19 @@
   text-decoration-style: dotted;
 }
 
-.heading a:hover::after {
-  content: "🔗";
+.icon {
+  color: var(--emphasized-foreground);
+  height: 100%;
   position: absolute;
-  right: calc(100% + 1rem);
+  display: none;
   user-select: none;
-  font-size: inherit;
-  margin-bottom: 4px;
+  right: calc(100% + 1ch);
 }
+
+.heading:has(a):hover .icon {
+  display: initial;
+}
+
 .compact {
   margin-bottom: 0;
 }
