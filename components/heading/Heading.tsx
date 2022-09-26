@@ -1,12 +1,16 @@
 import classNames from "classnames"
+import slugify from "slugify"
+import Link from "next/link"
 
 import styles from "./Heading.module.css"
 
 type HeadingProps = {
-  children: React.ReactNode
+  id?: string
+  children: string
   level: 1 | 2 | 3 | 4 | 5 | 6
   compact?: boolean
   light?: boolean
+  linkable?: boolean
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -14,19 +18,30 @@ const Heading: React.FC<HeadingProps> = ({
   level,
   compact = false,
   light = false,
+  linkable = false,
   ...rest
 }) => {
   const Component = `h${level}` as keyof JSX.IntrinsicElements
+  const slug = slugify(children, {
+    lower: true,
+  })
 
   return (
     <Component
+      id={linkable ? slug : undefined}
       className={classNames(styles.heading, styles[`level-${level}`], {
         [styles.compact]: compact,
         [styles.light]: light,
       })}
       {...rest}
     >
-      {children}
+      {linkable ? (
+        <Link href={`#${slug}`}>
+          <a>{children}</a>
+        </Link>
+      ) : (
+        children
+      )}
     </Component>
   )
 }

@@ -95,6 +95,14 @@ html:has(.dark-mode) {
   --navbar-background: #000000aa;
 }
 
+html:has(nav) {
+  scroll-padding-top: calc(var(--navbar-height) + 1rem);
+}
+
+body:has(nav) {
+  margin-top: var(--navbar-height);
+}
+
 code {
   font-family: var(--font-family-code);
 }

@@ -1,10 +1,32 @@
-.heading {
+.heading,
+.heading a {
   line-height: initial;
   font-weight: bold;
   color: var(--emphasized-foreground);
   margin-bottom: var(--spacing-minor);
+  font-size: inherit;
+  position: relative;
 }
 
+.heading a {
+  text-decoration: none;
+}
+
+.heading a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.heading a:hover::after {
+  content: "🔗";
+  position: absolute;
+  right: calc(100% + 1rem);
+  user-select: none;
+  font-size: inherit;
+  margin-bottom: 4px;
+}
 .compact {
   margin-bottom: 0;
 }

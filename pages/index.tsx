@@ -58,7 +58,9 @@ const Home: NextPage = () => {
         </Spacer>
         <main>
           <Section>
-            <Heading level={3}>About me</Heading>
+            <Heading level={3} linkable>
+              About me
+            </Heading>
             <Paragraph>
               I&apos;m a software engineer &amp; full-stack web developer
               specialized in commercial projects, startup creations, corporate
@@ -83,7 +85,9 @@ const Home: NextPage = () => {
             </Paragraph>
           </Section>
           <Section>
-            <Heading level={3}>Work &amp; projects</Heading>
+            <Heading level={3} linkable>
+              Work &amp; projects
+            </Heading>
             <Paragraph>
               For the past 3+ years, I&apos;ve been working really close to
               known companies from around the world, doing web consulting &amp;
@@ -186,7 +190,9 @@ const Home: NextPage = () => {
             </Paragraph>
           </Section>
           <Section>
-            <Heading level={4}>Commercial &amp; enterprise</Heading>
+            <Heading level={4} linkable>
+              Commercial &amp; enterprise
+            </Heading>
             <Paragraph>
               These are some of the most remarkable projects I&apos;ve had the
               fortune to develop and see in action:
@@ -232,7 +238,9 @@ const Home: NextPage = () => {
             </Paragraph>
           </Section>
           <Section>
-            <Heading level={4}>Personal &amp; open source</Heading>
+            <Heading level={4} linkable>
+              Personal &amp; open source
+            </Heading>
             <Paragraph>
               Open source &amp; side projects are important too. I&apos;ve spent
               a major part of the past couple years working on web development,
@@ -299,7 +307,9 @@ const Home: NextPage = () => {
             </Paragraph>
           </Section>
           <Section>
-            <Heading level={3}>Blog</Heading>
+            <Heading level={3} linkable>
+              Blog
+            </Heading>
             <Paragraph>
               I&apos;ve played with the idea of starting to write my thoughts
               and experiences in some sort of blog, this is where I&apos;ll
