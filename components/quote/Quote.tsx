@@ -10,14 +10,14 @@ type QuoteProps = {
 
 const Quote: React.FC<QuoteProps> = ({ children, icon, compact = false }) => {
   return (
-    <div
+    <blockquote
       className={classNames(styles.quote, {
         [styles.compact]: compact,
       })}
     >
       {icon && <div className={styles.icon}>{icon}</div>}
       <div className={styles.text}>{children}</div>
-    </div>
+    </blockquote>
   )
 }
 

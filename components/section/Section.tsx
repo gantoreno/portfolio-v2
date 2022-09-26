@@ -5,7 +5,7 @@ type SectionProps = {
 }
 
 const Section: React.FC<SectionProps> = ({ children }) => {
-  return <div className={styles.section}>{children}</div>
+  return <section className={styles.section}>{children}</section>
 }
 
 const SectionBlock: React.FC<SectionProps> = ({ children }) => {
