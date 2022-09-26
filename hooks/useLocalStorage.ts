@@ -15,14 +15,16 @@ export const useLocalStorage = (key: string, initialValue: any) => {
     }
   })
 
-  const setValue = (value: any) => {
+  const setValue = (value: any, persist: boolean = false) => {
     try {
       const valueToStore =
         value instanceof Function ? value(storedValue) : value
 
       setStoredValue(valueToStore)
 
-      window.localStorage.setItem(key, JSON.stringify(valueToStore))
+      if (persist) {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore))
+      }
     } catch (error) {
       //
     }

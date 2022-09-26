@@ -10,7 +10,6 @@ type DarkModeProviderProps = {
 }
 
 const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
-  const [prefersDarkMode, setPrefersDarkMode] = useState(false)
   const [darkMode, setDarkMode] = useLocalStorage("dark-mode", () => {
     try {
       return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -22,6 +21,28 @@ const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
   const toggleDarkMode = (value: boolean | null = null) => {
     setDarkMode(value !== null ? value : !darkMode)
   }
+
+  const darkModeListener = (event: MediaQueryListEvent) => {
+    setDarkMode(event.matches, false)
+  }
+
+  useEffect(() => {
+    try {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", darkModeListener)
+    } catch {
+      //
+    }
+
+    return () => {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .removeEventListener("change", darkModeListener)
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     if (darkMode) {
