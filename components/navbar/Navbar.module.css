@@ -30,6 +30,13 @@
   cursor: pointer;
 }
 
+.toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 1rem;
+}
+
 .icon {
   cursor: pointer;
   user-select: none;

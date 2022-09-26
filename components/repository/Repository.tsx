@@ -19,7 +19,9 @@ const Repository: React.FC<RepositoryProps> = ({ name, description, url }) => {
           <Paragraph compact>{description}</Paragraph>
         </div>
       </div>
-      <Link href={url}>View</Link>
+      <div>
+        <Link href={url}>View</Link>
+      </div>
     </div>
   )
 }

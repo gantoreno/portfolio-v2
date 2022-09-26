@@ -18,20 +18,7 @@
   z-index: 5;
   margin-left: 1ch;
   user-select: none;
-}
-
-.showMore::before {
-  content: "";
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: -4rem;
-  width: 4rem;
-  height: 100%;
-  z-index: 4;
-  background: linear-gradient(to left, var(--background), #00000000);
-}
-
-.readLess::before {
+  border: none;
   background: none;
+  padding: 0;
 }

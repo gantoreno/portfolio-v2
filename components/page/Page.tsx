@@ -9,17 +9,7 @@ type PageProps = {
 }
 
 const Page: React.FC<PageProps> = ({ children }) => {
-  const [isDarkMode] = useDarkMode()
-
-  return (
-    <div
-      className={classNames(styles.page, {
-        [styles.dark]: isDarkMode,
-      })}
-    >
-      {children}
-    </div>
-  )
+  return <div className={styles.page}>{children}</div>
 }
 
 export default Page
