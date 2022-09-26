@@ -12,7 +12,7 @@ import styles from "./Navbar.module.css"
 const Logo: React.FC = () => {
   return (
     <NextLink href="/" className={styles.home}>
-      <a>
+      <a aria-label="Home">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 100"
@@ -58,6 +58,7 @@ const Navbar: React.FC = () => {
             <Link href="#blog">Blog</Link>
             <Center axis="vertical">
               <button
+                aria-label={`Toggle ${darkMode ? "light" : "dark"} mode`}
                 className={styles.toggler}
                 onClick={() => toggleDarkMode()}
               >
