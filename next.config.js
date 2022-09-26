@@ -6,6 +6,22 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  rewrites: () => {
+    return {
+      beforeFiles: [
+        {
+          source: "/:path*",
+          has: [
+            {
+              type: "host",
+              value: "blog.gantoreno.com",
+            },
+          ],
+          destination: "/blog/:path*",
+        },
+      ],
+    }
+  },
 }
 
 module.exports = nextConfig
