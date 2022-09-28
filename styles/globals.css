@@ -74,7 +74,8 @@
 }
 
 html,
-body {
+body,
+button {
   color: var(--text-foreground);
   background: var(--background);
   font-family: var(--font-family);
