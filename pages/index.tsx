@@ -318,8 +318,8 @@ const Home: NextPage = () => {
               that!
             </Paragraph>
             <Paragraph>
-              Once it&apos;s done, the <Link href="#">Blog</Link> link should be
-              available.
+              Once it&apos;s done, the <Link href="/blog">Blog</Link> link
+              should be available.
             </Paragraph>
           </Section>
         </main>
