@@ -53,13 +53,13 @@ const Navbar: React.FC = () => {
         <div className={styles.content}>
           <Logo />
           <div className={styles.links}>
-            <Link href="#about-me" target="_self">
+            <Link href="/#about-me" target="_self">
               About
             </Link>
-            <Link href="#work-and-projects" target="_self">
+            <Link href="/#work-and-projects" target="_self">
               Work
             </Link>
-            <Link href="#blog" target="_self">
+            <Link href="/#blog" target="_self">
               Blog
             </Link>
             <Center axis="vertical">
