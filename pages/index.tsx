@@ -1,30 +1,29 @@
 import type { NextPage } from "next"
-import Image from "next/image"
-
 import Container from "../components/container/Container"
+import Head from "next/head"
+
+import Center from "../components/center/Center"
+import Experience from "../components/experience/Experience"
+import Grid from "../components/grid/Grid"
 import Heading from "../components/heading/Heading"
+import Image from "next/image"
 import Link from "../components/link/Link"
 import Navbar from "../components/navbar/Navbar"
 import Page from "../components/page/Page"
 import Paragraph from "../components/pragraph/Paragraph"
-import Section from "../components/section/Section"
-
-import avatar from "../assets/img/avatar.png"
-import Experience from "../components/experience/Experience"
 import Project from "../components/project/Project"
+import Quote from "../components/quote/Quote"
 import Repository from "../components/repository/Repository"
+import Section from "../components/section/Section"
+import Spacer from "../components/spacer/Spacer"
 import Timeline from "../components/timeline/Timeline"
 
-import Head from "next/head"
+import avatar from "../assets/img/avatar.png"
 import codework from "../assets/img/codework.png"
 import insightt from "../assets/img/insightt.png"
 import resident from "../assets/img/resident.png"
 import resivenca from "../assets/img/resivenca.png"
 import totalcom from "../assets/img/totalcom.png"
-import Center from "../components/center/Center"
-import Grid from "../components/grid/Grid"
-import Quote from "../components/quote/Quote"
-import Spacer from "../components/spacer/Spacer"
 
 const Home: NextPage = () => {
   return (
