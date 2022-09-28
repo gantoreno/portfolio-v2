@@ -1,13 +1,10 @@
 import classNames from "classnames"
 import { useEffect, useState } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import {
-  vs,
-  vsDark,
-  vscDarkPlus,
-} from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 import useDarkMode from "../../hooks/useDarkMode"
+import gabrielDark from "../../themes/gabrielDark"
+import gabrielLight from "../../themes/gabrielLight"
 
 import styles from "./Code.module.css"
 
@@ -55,7 +52,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
     >
       <SyntaxHighlighter
         language={language}
-        style={darkMode ? vscDarkPlus : vs}
+        style={darkMode ? gabrielDark : gabrielLight}
       >
         {code}
       </SyntaxHighlighter>
