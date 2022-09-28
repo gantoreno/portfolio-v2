@@ -53,9 +53,15 @@ const Navbar: React.FC = () => {
         <div className={styles.content}>
           <Logo />
           <div className={styles.links}>
-            <Link href="#about">About</Link>
-            <Link href="#work">Work</Link>
-            <Link href="#blog">Blog</Link>
+            <Link href="#about-me" target="_self">
+              About
+            </Link>
+            <Link href="#work-and-projects" target="_self">
+              Work
+            </Link>
+            <Link href="#blog" target="_self">
+              Blog
+            </Link>
             <Center axis="vertical">
               <button
                 aria-label={`Toggle ${darkMode ? "light" : "dark"} mode`}
