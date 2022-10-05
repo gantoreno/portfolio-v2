@@ -139,7 +139,7 @@ const Home: NextPage = () => {
               </Timeline.Item>
               <Timeline.Item>
                 <Experience position="Software Engineer" year="Jan 2020">
-                  I maintained the company&amp;s client management system with
+                  I maintained the company&apos;s client management system with
                   custom PHP scripts &amp; SQL data querying, configured various
                   servers for monitoring services such as SolarWinds Orion,
                   Splynx &amp; UNMS, as well as the company&amp;s main database,
