@@ -8,10 +8,4 @@ const Section: React.FC<SectionProps> = ({ children }) => {
   return <section className={styles.section}>{children}</section>
 }
 
-const SectionBlock: React.FC<SectionProps> = ({ children }) => {
-  return <div className={styles.block}>{children}</div>
-}
-
-export default Object.assign(Section, {
-  Block: SectionBlock,
-})
+export default Section

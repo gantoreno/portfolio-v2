@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react"
-import { useLocalStorage } from "../hooks/useLocalStorage"
+import React, { useEffect } from "react"
+
+import useLocalStorage from "../hooks/useLocalStorage"
 
 type DarkMode = [boolean, () => void]
 
@@ -19,7 +20,7 @@ const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
   })
 
   const toggleDarkMode = (value: boolean | null = null) => {
-    setDarkMode(value !== null ? value : !darkMode)
+    setDarkMode(value !== null ? value : !darkMode, true)
   }
 
   const darkModeListener = (event: MediaQueryListEvent) => {

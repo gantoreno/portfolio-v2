@@ -1,16 +1,16 @@
+import Image from "next/image"
 import { default as NextLink } from "next/link"
 import { BiMoon, BiSun } from "react-icons/bi"
 
 import useDarkMode from "../../hooks/useDarkMode"
+import usePageLoad from "../../hooks/usePageLoad"
 import Center from "../center/Center"
 import Container from "../container/Container"
 import Link from "../link/Link"
 
-import logo from "../../assets/svg/logo.svg"
-
-import Image from "next/image"
-import { usePageLoad } from "../../hooks/usePageLoad"
 import styles from "./Navbar.module.css"
+
+import logo from "../../assets/svg/logo.svg"
 
 const Logo: React.FC = () => {
   return (

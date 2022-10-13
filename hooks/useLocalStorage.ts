@@ -2,10 +2,10 @@ import { useState } from "react"
 
 type UseLocalStorageReturnType = [any, (value: any, persist: boolean) => void]
 
-export const useLocalStorage = (
+function useLocalStorage(
   key: string,
   initialValue: any
-): UseLocalStorageReturnType => {
+): UseLocalStorageReturnType {
   const [storedValue, setStoredValue] = useState(() => {
     try {
       const item = window.localStorage.getItem(key)
@@ -37,3 +37,5 @@ export const useLocalStorage = (
 
   return [storedValue, setValue]
 }
+
+export default useLocalStorage

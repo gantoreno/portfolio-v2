@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 type UsePageLoadReturnType = boolean
 
-export const usePageLoad = (): UsePageLoadReturnType => {
+function usePageLoad(): UsePageLoadReturnType {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
@@ -11,3 +11,5 @@ export const usePageLoad = (): UsePageLoadReturnType => {
 
   return isLoaded
 }
+
+export default usePageLoad

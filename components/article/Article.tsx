@@ -1,5 +1,6 @@
 import Heading from "../heading/Heading"
 import Link from "../link/Link"
+
 import styles from "./Article.module.css"
 
 type ArticleProps = {

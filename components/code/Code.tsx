@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 
 import useDarkMode from "../../hooks/useDarkMode"
-import { usePageLoad } from "../../hooks/usePageLoad"
+import usePageLoad from "../../hooks/usePageLoad"
 import gabrielDark from "../../themes/gabrielDark"
 import gabrielLight from "../../themes/gabrielLight"
 
@@ -10,12 +10,6 @@ import styles from "./Code.module.css"
 
 type CodeProps = {
   children: React.ReactNode
-}
-
-type CodeBlockProps = {
-  code: string
-  language?: string
-  compact?: boolean
 }
 
 const Code: React.FC<CodeProps> = ({ children }) => {
@@ -26,6 +20,12 @@ const Code: React.FC<CodeProps> = ({ children }) => {
       <span className={styles.quote}>`</span>
     </code>
   )
+}
+
+type CodeBlockProps = {
+  code: string
+  language?: string
+  compact?: boolean
 }
 
 const CodeBlock: React.FC<CodeBlockProps> = ({

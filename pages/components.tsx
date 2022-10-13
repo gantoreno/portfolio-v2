@@ -1,23 +1,23 @@
 import type { NextPage } from "next"
 
-import Link from "../components/link/Link"
-import Button from "../components/button/Button"
-import Container from "../components/container/Container"
-import Heading from "../components/heading/Heading"
-import Paragraph from "../components/pragraph/Paragraph"
-import Code from "../components/code/Code"
-import Quote from "../components/quote/Quote"
-import Timeline from "../components/timeline/Timeline"
-import Experience from "../components/experience/Experience"
-import Section from "../components/section/Section"
-import Project from "../components/project/Project"
-import Repository from "../components/repository/Repository"
 import Article from "../components/article/Article"
+import Button from "../components/button/Button"
+import Code from "../components/code/Code"
+import Container from "../components/container/Container"
+import Experience from "../components/experience/Experience"
 import Figure from "../components/figure/Figure"
-
-import img from "../assets/img/sample.jpg"
+import Heading from "../components/heading/Heading"
+import Link from "../components/link/Link"
 import Navbar from "../components/navbar/Navbar"
 import Page from "../components/page/Page"
+import Paragraph from "../components/pragraph/Paragraph"
+import Project from "../components/project/Project"
+import Quote from "../components/quote/Quote"
+import Repository from "../components/repository/Repository"
+import Section from "../components/section/Section"
+import Timeline from "../components/timeline/Timeline"
+
+import img from "../assets/img/sample.jpg"
 
 const Components: NextPage = () => {
   return (

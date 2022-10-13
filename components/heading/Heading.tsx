@@ -1,9 +1,9 @@
 import classNames from "classnames"
-import slugify from "slugify"
 import Link from "next/link"
+import { BiLink } from "react-icons/bi"
+import slugify from "slugify"
 
 import styles from "./Heading.module.css"
-import { BiLink } from "react-icons/bi"
 
 type HeadingProps = {
   id?: string

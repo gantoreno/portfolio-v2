@@ -8,10 +8,6 @@ type ParagraphProps = {
   compact?: boolean
 }
 
-type ExpandableParagraphProps = ParagraphProps & {
-  at?: number
-}
-
 const Paragraph: React.FC<ParagraphProps> = ({ children, compact = false }) => {
   return (
     <p
@@ -22,6 +18,10 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, compact = false }) => {
       {children}
     </p>
   )
+}
+
+type ExpandableParagraphProps = ParagraphProps & {
+  at?: number
 }
 
 const ExpandableParagraph: React.FC<ExpandableParagraphProps> = ({

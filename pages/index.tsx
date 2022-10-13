@@ -1,9 +1,9 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Container from "../components/container/Container"
-
 import Image from "next/image"
+
 import Center from "../components/center/Center"
+import Container from "../components/container/Container"
 import Experience from "../components/experience/Experience"
 import Grid from "../components/grid/Grid"
 import Heading from "../components/heading/Heading"

@@ -1,15 +1,16 @@
 import Head from "next/head"
 import Image from "next/image"
+
+import Center from "../components/center/Center"
 import Container from "../components/container/Container"
+import Heading from "../components/heading/Heading"
+import Link from "../components/link/Link"
 import Navbar from "../components/navbar/Navbar"
 import Page from "../components/page/Page"
+import Paragraph from "../components/pragraph/Paragraph"
 import Spacer from "../components/spacer/Spacer"
 
 import avatarSad from "../assets/img/avatar-sad.png"
-import Heading from "../components/heading/Heading"
-import Center from "../components/center/Center"
-import Paragraph from "../components/pragraph/Paragraph"
-import Link from "../components/link/Link"
 
 export default function Custom404() {
   return (

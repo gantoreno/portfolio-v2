@@ -4,12 +4,12 @@ type TimelineProps = {
   children: React.ReactNode
 }
 
-type TimelineItemProps = {
-  children: React.ReactNode
-}
-
 const Timeline: React.FC<TimelineProps> = ({ children }) => {
   return <div className={styles.timeline}>{children}</div>
+}
+
+type TimelineItemProps = {
+  children: React.ReactNode
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ children }) => {
