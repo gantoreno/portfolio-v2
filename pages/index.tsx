@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           <Center axis="vertical">
             <div>
               <Heading level={1}>Hello there! I&apos;m Gabriel</Heading>
-              <Heading level={2} light>
+              <Heading level={2} compact light>
                 Software Engineer
               </Heading>
             </div>
