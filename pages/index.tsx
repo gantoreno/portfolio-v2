@@ -372,7 +372,7 @@ const Home: NextPage = () => {
               </Spacer>
             </Grid>
           </Spacer>
-          <Spacer bottom="8rem" padding>
+          <Spacer bottom="8rem">
             Copyright &copy; Gabriel Moreno, {new Date().getFullYear()}. All
             rights reserved.
           </Spacer>
