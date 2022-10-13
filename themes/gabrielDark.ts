@@ -47,40 +47,40 @@ const gabrielDark: { [key: string]: CSSProperties } = {
   },
   'pre[class*="language-"]::selection': {
     textShadow: "none",
-    background: "#264F78",
+    background: "#7799CC",
   },
   'code[class*="language-"]::selection': {
     textShadow: "none",
-    background: "#264F78",
+    background: "#7799CC",
   },
   'pre[class*="language-"] *::selection': {
     textShadow: "none",
-    background: "#264F78",
+    background: "#7799CC",
   },
   'code[class*="language-"] *::selection': {
     textShadow: "none",
-    background: "#264F78",
+    background: "#7799CC",
   },
   ':not(pre) > code[class*="language-"]': {
     padding: ".1em .3em",
     borderRadius: ".3em",
-    color: "#db4c69",
+    color: "#AA6666",
     background: "#1e1e1e",
   },
   ".namespace": {
     opacity: ".7",
   },
   "doctype.doctype-tag": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   "doctype.name": {
     color: "#ffffff",
   },
   comment: {
-    color: "#6a9955",
+    color: "#99bb88",
   },
   prolog: {
-    color: "#6a9955",
+    color: "#99bb88",
   },
   punctuation: {
     color: "#ffffff",
@@ -92,103 +92,103 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   property: {
-    color: "#999DD4",
+    color: "#8888BB",
   },
   tag: {
-    color: "#7ba2c3",
+    color: "#7799CC",
   },
   boolean: {
-    color: "#999DD4",
+    color: "#8888BB",
   },
   number: {
-    color: "#b5cea8",
+    color: "#99bb88",
   },
   constant: {
     color: "#ffffff",
   },
   symbol: {
-    color: "#b5cea8",
+    color: "#99bb88",
   },
   inserted: {
-    color: "#b5cea8",
+    color: "#99bb88",
   },
   unit: {
-    color: "#b5cea8",
+    color: "#99bb88",
   },
   selector: {
-    color: "#d7ba7d",
+    color: "#CCAA66",
   },
   "attr-name": {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   string: {
-    color: "#7ba2c3",
+    color: "#7799CC",
   },
   char: {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   builtin: {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   deleted: {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   ".language-css .token.string.url": {
     textDecoration: "underline",
   },
   operator: {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   entity: {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   "operator.arrow": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   atrule: {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   "atrule.rule": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   "atrule.url": {
     color: "#ffffff",
   },
   "atrule.url.function": {
-    color: "#dcdcaa",
+    color: "#CCAA66",
   },
   "atrule.url.punctuation": {
     color: "#ffffff",
   },
   keyword: {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   "keyword.module": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   "keyword.control-flow": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   function: {
-    color: "#dcdcaa",
+    color: "#CCAA66",
   },
   "function.maybe-class-name": {
-    color: "#dcdcaa",
+    color: "#CCAA66",
   },
   regex: {
-    color: "#d16969",
+    color: "#8888BB",
   },
   important: {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   italic: {
     fontStyle: "italic",
   },
   "class-name": {
-    color: "#7ba2c3",
+    color: "#7799CC",
   },
   "maybe-class-name": {
-    color: "#7ba2c3",
+    color: "#7799CC",
   },
   console: {
     color: "#ffffff",
@@ -200,7 +200,7 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   "punctuation.interpolation-punctuation": {
-    color: "#ac616a",
+    color: "#AA6666",
   },
   variable: {
     color: "#ffffff",
@@ -212,7 +212,7 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   escape: {
-    color: "#d7ba7d",
+    color: "#CCAA66",
   },
   "tag.punctuation": {
     color: "#ffffff",
@@ -221,16 +221,16 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   "attr-value": {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   "attr-value.punctuation": {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   "attr-value.punctuation.attr-equals": {
     color: "#ffffff",
   },
   namespace: {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   'pre[class*="language-javascript"]': {
     color: "#ffffff",
@@ -257,10 +257,10 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   'pre[class*="language-css"]': {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   'code[class*="language-css"]': {
-    color: "#999dd4",
+    color: "#8888BB",
   },
   'pre[class*="language-html"]': {
     color: "#ffffff",
@@ -269,7 +269,7 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     color: "#ffffff",
   },
   ".language-regex .token.anchor": {
-    color: "#dcdcaa",
+    color: "#CCAA66",
   },
   ".language-html .token.punctuation": {
     color: "#ffffff",
@@ -279,8 +279,8 @@ const gabrielDark: { [key: string]: CSSProperties } = {
     zIndex: "1",
   },
   ".line-highlight.line-highlight": {
-    background: "#f7ebc6",
-    boxShadow: "inset 5px 0 0 #f7d87c",
+    background: "#CCAA66",
+    boxShadow: "inset 5px 0 0 #CCAA66",
     zIndex: "0",
   },
 }
