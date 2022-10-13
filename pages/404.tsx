@@ -32,10 +32,7 @@ export default function Custom404() {
             <Center axis="horizontal">
               <Paragraph>
                 The page you&apos;re trying to access could not be found, but
-                you can go back to the{" "}
-                <Link href="/" target="_self">
-                  main website
-                </Link>{" "}
+                you can go back to the <Link href="/">main website</Link>{" "}
                 instead.
               </Paragraph>
             </Center>
