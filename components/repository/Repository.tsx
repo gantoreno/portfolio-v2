@@ -20,7 +20,9 @@ const Repository: React.FC<RepositoryProps> = ({ name, description, url }) => {
         </div>
       </div>
       <div>
-        <Link href={url}>View</Link>
+        <Link href={url} target="_blank">
+          View
+        </Link>
       </div>
     </div>
   )

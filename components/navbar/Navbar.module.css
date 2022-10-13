@@ -9,7 +9,7 @@
 }
 
 .logo {
-  fill: var(--foreground);
+  filter: invert(var(--color-inversion));
   height: 3rem;
   cursor: pointer;
 }

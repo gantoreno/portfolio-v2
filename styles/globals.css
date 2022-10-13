@@ -7,6 +7,8 @@
   --font-family-code: "Google Sans Mono", "Consolas", "Courier New", Courier,
     monospace;
 
+  --color-inversion: 0;
+
   --font-size-normal: 1rem;
   --font-size-code: calc(var(--font-size-normal) - 2px);
 
@@ -87,6 +89,8 @@ body {
 }
 
 html:has(.dark-mode) {
+  --color-inversion: 1;
+
   --foreground: var(--color-white);
   --background: var(--color-black);
 

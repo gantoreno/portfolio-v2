@@ -1,8 +1,8 @@
 import classNames from "classnames"
-import { useEffect, useState } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 
 import useDarkMode from "../../hooks/useDarkMode"
+import { usePageLoad } from "../../hooks/usePageLoad"
 import gabrielDark from "../../themes/gabrielDark"
 import gabrielLight from "../../themes/gabrielLight"
 
@@ -33,14 +33,10 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
   language = "text",
   compact = false,
 }) => {
+  const isLoaded = usePageLoad()
   const [darkMode] = useDarkMode()
-  const [loaded, setLoaded] = useState(false)
 
-  useEffect(() => {
-    setLoaded(true)
-  }, [])
-
-  if (!loaded) {
+  if (!isLoaded) {
     return null
   }
 

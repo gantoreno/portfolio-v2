@@ -8,7 +8,7 @@ type LinkProps = NextLinkProps & {
   target?: string
 }
 
-const Link: React.FC<LinkProps> = ({ href, children, target = "_blank" }) => {
+const Link: React.FC<LinkProps> = ({ href, children, target }) => {
   return (
     <NextLink href={href}>
       <a className={styles.link} rel="noopener noreferrer" target={target}>

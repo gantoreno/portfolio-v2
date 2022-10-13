@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               working on personal &amp; open source projects, as well as
               mentoring beginner programmers and students with an awesome team
               at{" "}
-              <Link href="https://www.electrichive.org/">
+              <Link href="https://www.electrichive.org/" target="_blank">
                 The Electric Hive
               </Link>
               ; but the most important thing is, I&apos;m always discovering,
@@ -80,7 +80,10 @@ const Home: NextPage = () => {
             </Paragraph>
             <Paragraph>
               Want to learn more about me? Have a look at my{" "}
-              <Link href="https://linkedin.com/in/gantoreno">LinkedIn</Link>.
+              <Link href="https://linkedin.com/in/gantoreno" target="_blank">
+                LinkedIn
+              </Link>
+              .
             </Paragraph>
           </Section>
           <Section>
@@ -185,7 +188,10 @@ const Home: NextPage = () => {
             </Timeline>
             <Paragraph>
               Interested in my professional profile? Download my{" "}
-              <Link href="/assets/pdf/resume.pdf">resume</Link>.
+              <Link href="/assets/pdf/resume.pdf" target="_blank">
+                resume
+              </Link>
+              .
             </Paragraph>
           </Section>
           <Section>
@@ -233,7 +239,10 @@ const Home: NextPage = () => {
             />
             <Paragraph>
               Like my designs? You might also like my{" "}
-              <Link href="https://behance.net/gantoreno">Behance</Link> profile.
+              <Link href="https://behance.net/gantoreno" target="_blank">
+                Behance
+              </Link>{" "}
+              profile.
             </Paragraph>
           </Section>
           <Section>
@@ -292,17 +301,25 @@ const Home: NextPage = () => {
             </Spacer>
             <Quote icon="💼">
               The code for this portfolio is also hosted on{" "}
-              <Link href="https://github.com/gantoreno/portfolio-v2">
+              <Link
+                href="https://github.com/gantoreno/portfolio-v2"
+                target="_blank"
+              >
                 GitHub
               </Link>
               , and it&apos;s an update from my{" "}
-              <Link href="https://gantoreno.netlify.app/">previous</Link>{" "}
+              <Link href="https://gantoreno.netlify.app/" target="_blank">
+                previous
+              </Link>{" "}
               website. Feel free to explore the old one to see how things have
               changed, as I transitioned towards a more minimalistic approach.
             </Quote>
             <Paragraph>
               Want to see more projects? Check out my{" "}
-              <Link href="https://github.com/gantoreno">GitHub</Link> profile.
+              <Link href="https://github.com/gantoreno" target="_blank">
+                GitHub
+              </Link>{" "}
+              profile.
             </Paragraph>
           </Section>
           <Section>
@@ -330,16 +347,27 @@ const Home: NextPage = () => {
               </Center>
               <Spacer align="right">
                 <Spacer inline>
-                  <Link href="https://twitter.com/gantoreno">Twitter</Link>
+                  <Link href="https://twitter.com/gantoreno" target="_blank">
+                    Twitter
+                  </Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="https://instagram.com/gantoreno">Instagram</Link>
+                  <Link href="https://instagram.com/gantoreno" target="_blank">
+                    Instagram
+                  </Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="https://github.com/gantoreno">GitHub</Link>
+                  <Link href="https://github.com/gantoreno" target="_blank">
+                    GitHub
+                  </Link>
                 </Spacer>
                 <Spacer left="1rem" inline>
-                  <Link href="https://linkedin.com/in/gantoreno">LinkedIn</Link>
+                  <Link
+                    href="https://linkedin.com/in/gantoreno"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </Link>
                 </Spacer>
               </Spacer>
             </Grid>
