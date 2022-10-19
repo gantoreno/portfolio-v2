@@ -2,11 +2,7 @@ import Spacer from "../spacer/Spacer"
 
 import styles from "./Header.module.css"
 
-type HeaderProps = {
-  children: React.ReactNode
-}
-
-const Header: React.FC<HeaderProps> = ({ children }) => {
+const Header: React.FC<React.HTMLAttributes<HTMLElement>> = ({ children }) => {
   return (
     <header className={styles.header}>
       <Spacer top="8rem" bottom="8rem">

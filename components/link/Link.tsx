@@ -3,14 +3,13 @@ import { BiLinkExternal } from "react-icons/bi"
 
 import styles from "./Link.module.css"
 
-type LinkProps = NextLinkProps & {
-  children: React.ReactNode
-  target?: string
-}
-
-const Link: React.FC<LinkProps> = ({ href, children, target }) => {
+const Link: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({
+  href,
+  children,
+  target,
+}) => {
   return (
-    <NextLink href={href}>
+    <NextLink href={href ?? "#"}>
       <a className={styles.link} rel="noopener noreferrer" target={target}>
         {children}
         <span className={styles.pointer}>

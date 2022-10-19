@@ -2,18 +2,23 @@ import classNames from "classnames"
 
 import styles from "./Quote.module.css"
 
-type QuoteProps = {
-  children: React.ReactNode
+type QuoteProps = React.QuoteHTMLAttributes<HTMLQuoteElement> & {
   icon?: React.ReactNode
   compact?: boolean
 }
 
-const Quote: React.FC<QuoteProps> = ({ children, icon, compact = false }) => {
+const Quote: React.FC<QuoteProps> = ({
+  children,
+  icon,
+  compact = false,
+  ...rest
+}) => {
   return (
     <blockquote
       className={classNames(styles.quote, {
         [styles.compact]: compact,
       })}
+      {...rest}
     >
       {icon && <div className={styles.icon}>{icon}</div>}
       <div className={styles.text}>{children}</div>

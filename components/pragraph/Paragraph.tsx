@@ -3,8 +3,7 @@ import { useState } from "react"
 
 import styles from "./Paragraph.module.css"
 
-type ParagraphProps = {
-  children: React.ReactNode
+type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
   compact?: boolean
 }
 

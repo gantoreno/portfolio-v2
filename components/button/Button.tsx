@@ -1,11 +1,6 @@
 import styles from "./Button.module.css"
 
-type ButtonProps = {
-  children: React.ReactNode
-  disabled?: boolean
-}
-
-const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
   children,
   disabled = false,
   ...rest

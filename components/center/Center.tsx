@@ -2,9 +2,8 @@ import classNames from "classnames"
 
 import styles from "./Center.module.css"
 
-type CenterProps = {
+type CenterProps = React.HTMLAttributes<HTMLElement> & {
   axis: "horizontal" | "vertical" | "both"
-  children: React.ReactNode
 }
 
 const Center: React.FC<CenterProps> = ({ axis, children }) => {

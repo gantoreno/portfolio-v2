@@ -1,11 +1,10 @@
 import styles from "./Spacer.module.css"
 
-type SpacerProps = {
+type SpacerProps = React.HTMLAttributes<HTMLElement> & {
   top?: string
   right?: string
   bottom?: string
   left?: string
-  children: React.ReactNode
   align?: "left" | "right" | "center" | "justify"
   padding?: boolean
   inline?: boolean

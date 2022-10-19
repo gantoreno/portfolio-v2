@@ -100,87 +100,53 @@ const Home: NextPage = () => {
                 company="TheoremOne, LLC"
                 position="Senior Engineering Talent Advocate"
                 year="Jul 2022"
-              >
-                I owned, managed &amp; improved the front-end React pipeline,
-                engineered new manual and automatized systems for the different
-                areas of the hiring process, engineered new feature for the
-                hiring tooling backing our processesm as well as designed and
-                built new technical assessments for the engineering roles.
-              </Experience>
+                description="I owned, managed & improved the front-end React pipeline, engineered new manual and automatized systems for the different areas of the hiring process, engineered new feature for the hiring tooling backing our processesm as well as designed and built new technical assessments for the engineering roles."
+              />
             </Timeline.Item>
             <Timeline.Item>
               <Experience
                 company="CobuildLab, Inc"
                 position="React Engineer"
                 year="Aug 2021"
-              >
-                I developed commercial-grade applications by implementing
-                full-stack web technologies such as JavaScript with React and
-                TypeScript, GraphQL &amp; more, contributed to internal
-                libraries &amp; projects (authentication tools, validation
-                tools), and performed API optimizations &amp; codebase
-                improvements, increasing overall performance, efficiency &amp;
-                cost savings by 80%.
-              </Experience>
+                description="I developed commercial-grade applications by implementing full-stack web technologies such as JavaScript with React and TypeScript, GraphQL & more, contributed to internal libraries & projects (authentication tools, validation tools), and performed API optimizations & codebase improvements, increasing overall performance, efficiency & cost savings by 80%."
+              />
             </Timeline.Item>
             <Timeline.Item>
               <Experience
                 company="Totalcom Venezuela, C.A"
                 position="Systems Engineer"
                 year="Apr 2021"
-              >
-                I developed internal tools with web technologies such as
-                React.js, led the engineering team for a custom high-performant
-                streaming service, created &amp; maintained the company&apos;s
-                web media player for live video &amp; signal broadcasting with
-                Next.js, and implemented custom software solutions for DNS
-                management.
-              </Experience>
+                description="I developed internal tools with web technologies such as React.js, led the engineering team for a custom high-performant streaming service, created & maintained the company's web media player for live video & signal broadcasting with Next.js, and implemented custom software solutions for DNS management."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience position="Software Engineer" year="Jan 2020">
-                I maintained the company&apos;s client management system with
-                custom PHP scripts &amp; SQL data querying, configured various
-                servers for monitoring services such as SolarWinds Orion, Splynx
-                &amp; UNMS, as well as the company&amp;s main database, and
-                mplemented custom bash routines for server tasks, as well as
-                custom RouterOS scripts for managing a client&apos;s connection
-                status &amp; a speed test utility.
-              </Experience>
+              <Experience
+                position="Software Engineer"
+                year="Jan 2020"
+                description="I maintained the company's client management system with custom PHP scripts & SQL data querying, configured various servers for monitoring services such as SolarWinds Orion, Splynx & UNMS, as well as the company's main database, and mplemented custom bash routines for server tasks, as well as custom RouterOS scripts for managing a client's connection status & a speed test utility."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience position="Frontend Engineer" year="Apr 2019">
-                I Redesigned the company&apos;s legacy website by implementing
-                React with Next.js &amp; Scss, worked with the design team to
-                refresh the company&apos;s public image &amp; corporate
-                identity, as well as the copywriting team for updating their
-                mission, vision, and values, and implemented new visual designs
-                on their customer portal to match it with the company&apos;s
-                design language &amp; corporate identity.
-              </Experience>
+              <Experience
+                position="Frontend Engineer"
+                year="Apr 2019"
+                description="I maintained the company's client management system with custom PHP scripts & SQL data querying, configured various servers for monitoring services such as SolarWinds Orion, Splynx & UNMS, as well as the company's main database, and mplemented custom bash routines for server tasks, as well as custom RouterOS scripts for managing a client's connection status & a speed test utility."
+              />
             </Timeline.Item>
             <Timeline.Item>
               <Experience
                 company="CodeWork Venezuela, C.A"
                 position="Full Stack Developer"
                 year="Jan 2019"
-              >
-                I Worked with the design &amp; development team to create
-                beautiful, modern &amp; responsive websites for the
-                company&apos;s clients with React, developed the company&apos;s
-                project management system through PHP with the Laravel framework
-                with roles, tasks &amp; comments, as well as template showcasing
-                for client presentations, optimizing development times &amp;
-                time tracking routines by 37%, and configured the company&apos;s
-                project storage server &amp; linked it with the project
-                management system for full remote access to their projects &amp;
-                templates.
-              </Experience>
+                description="I Worked with the design & development team to create beautiful, modern & responsive websites for the company's clients with React, developed the company's project management system through PHP with the Laravel framework with roles, tasks & comments, as well as template showcasing for client presentations, optimizing development times & time tracking routines by 37%, and configured the company's project storage server & linked it with the project management system for full remote access to their projects & templates."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience year="Sep 2018" compact>
-                I learned how to code. {"🎉"}
-              </Experience>
+              <Experience
+                year="Sep 2018"
+                compact
+                description="I learned how to code. 🎉"
+              />
             </Timeline.Item>
           </Timeline>
           <Paragraph>

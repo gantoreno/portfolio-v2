@@ -1,18 +1,16 @@
+import React from "react"
+import reactSyntaxHighlighter from "react-syntax-highlighter"
 import styles from "./Timeline.module.css"
 
-type TimelineProps = {
-  children: React.ReactNode
-}
-
-const Timeline: React.FC<TimelineProps> = ({ children }) => {
+const Timeline: React.FC<React.HTMLAttributes<HTMLElement>> = ({
+  children,
+}) => {
   return <div className={styles.timeline}>{children}</div>
 }
 
-type TimelineItemProps = {
-  children: React.ReactNode
-}
-
-const TimelineItem: React.FC<TimelineItemProps> = ({ children }) => {
+const TimelineItem: React.FC<React.HTMLAttributes<HTMLElement>> = ({
+  children,
+}) => {
   return <div className={styles.timelineItem}>{children}</div>
 }
 

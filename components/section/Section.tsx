@@ -1,10 +1,8 @@
 import styles from "./Section.module.css"
 
-type SectionProps = {
-  children: React.ReactNode
-}
-
-const Section: React.FC<SectionProps> = ({ children }) => {
+const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  children,
+}) => {
   return <section className={styles.section}>{children}</section>
 }
 

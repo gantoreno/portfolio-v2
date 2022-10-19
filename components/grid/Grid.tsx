@@ -1,8 +1,7 @@
 import styles from "./Grid.module.css"
 
-type GridProps = {
+type GridProps = React.HTMLAttributes<HTMLElement> & {
   columns: Array<number>
-  children: React.ReactNode
 }
 
 const Grid: React.FC<GridProps> = ({ columns, children }) => {

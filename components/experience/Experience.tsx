@@ -8,7 +8,7 @@ type ExperienceProps = {
   year?: string
   company?: string
   position?: string
-  children?: React.ReactNode
+  description?: string
   compact?: boolean
 }
 
@@ -16,7 +16,7 @@ const Experience: React.FC<ExperienceProps> = ({
   year,
   company,
   position,
-  children,
+  description,
   compact = false,
 }) => {
   return (
@@ -29,9 +29,9 @@ const Experience: React.FC<ExperienceProps> = ({
       >
         {company && <div className={styles.company}>{company}</div>}
         {position && <div className={styles.position}>{position}</div>}
-        {children && (
+        {description && (
           <div className={styles.description}>
-            <Paragraph.Expandable>{children}</Paragraph.Expandable>
+            <Paragraph.Expandable>{description}</Paragraph.Expandable>
           </div>
         )}
       </div>
