@@ -123,33 +123,34 @@ export default Button`}
         <Section>
           <Timeline>
             <Timeline.Item>
-              <Experience year="Dec 2022" company="Company" position="Position">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, architecto aspernatur dolore, non omnis dignissimos
-                tenetur incidunt officiis neque veniam mollitia nulla a.
-                Veritatis impedit, aspernatur aperiam non omnis expedita?
-              </Experience>
+              <Experience
+                year="Dec 2022"
+                company="Company"
+                position="Position"
+                description="Lorem ipsum dolor sit amet."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience year="Jul 2022" company="Company" position="Position">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, architecto aspernatur dolore, non omnis dignissimos
-                tenetur incidunt officiis neque veniam mollitia nulla a.
-                Veritatis impedit, aspernatur aperiam non omnis expedita?
-              </Experience>
+              <Experience
+                year="Jul 2022"
+                company="Company"
+                position="Position"
+                description="Lorem ipsum dolor sit amet."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience year="Jan 2022" position="Position">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, architecto aspernatur dolore, non omnis dignissimos
-                tenetur incidunt officiis neque veniam mollitia nulla a.
-                Veritatis impedit, aspernatur aperiam non omnis expedita?
-              </Experience>
+              <Experience
+                year="Jan 2022"
+                position="Position"
+                description="Lorem ipsum dolor sit amet."
+              />
             </Timeline.Item>
             <Timeline.Item>
-              <Experience year="Dec 2020" compact>
-                I started coding. {"🎉"}
-              </Experience>
+              <Experience
+                year="Dec 2020"
+                description="I started coding. 🎉"
+                compact
+              />
             </Timeline.Item>
           </Timeline>
         </Section>
