@@ -97,6 +97,14 @@ const Home: NextPage = () => {
           <Timeline>
             <Timeline.Item>
               <Experience
+                company="Zemoga, Inc"
+                position="Senior Frontend Engineer"
+                year="Jan 2023"
+                description="I performed as the technical leader for the SNY TV project, built scalable websites & web applications with Next.js, TypeScript, TailwindCSS & AWS, developed highly performant interfaces & custom components, and helped with analyzing & unblocking tasks & requirements across the entire team."
+              />
+            </Timeline.Item>
+            <Timeline.Item>
+              <Experience
                 company="TheoremOne, LLC"
                 position="Senior Engineering Talent Advocate"
                 year="Jul 2022"
@@ -113,7 +121,7 @@ const Home: NextPage = () => {
             </Timeline.Item>
             <Timeline.Item>
               <Experience
-                company="Totalcom Venezuela, C.A"
+                company="Totalcom Venezuela, CA"
                 position="Systems Engineer"
                 year="Apr 2021"
                 description="I developed internal tools with web technologies such as React.js, led the engineering team for a custom high-performant streaming service, created & maintained the company's web media player for live video & signal broadcasting with Next.js, and implemented custom software solutions for DNS management."
@@ -135,7 +143,7 @@ const Home: NextPage = () => {
             </Timeline.Item>
             <Timeline.Item>
               <Experience
-                company="CodeWork Venezuela, C.A"
+                company="CodeWork Venezuela, CA"
                 position="Full Stack Developer"
                 year="Jan 2019"
                 description="I Worked with the design & development team to create beautiful, modern & responsive websites for the company's clients with React, developed the company's project management system through PHP with the Laravel framework with roles, tasks & comments, as well as template showcasing for client presentations, optimizing development times & time tracking routines by 37%, and configured the company's project storage server & linked it with the project management system for full remote access to their projects & templates."
