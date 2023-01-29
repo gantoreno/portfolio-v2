@@ -26,6 +26,7 @@ import insightt from "../assets/img/insightt.png"
 import resident from "../assets/img/resident.png"
 import resivenca from "../assets/img/resivenca.png"
 import totalcom from "../assets/img/totalcom.png"
+import sny from "../assets/img/sny.png"
 
 const Home: NextPage = () => {
   return (
@@ -173,6 +174,13 @@ const Home: NextPage = () => {
             These are some of the most remarkable projects I&apos;ve had the
             fortune to develop and see in action:
           </Paragraph>
+          <Project
+            title="SNY"
+            description="The home of all things New York sports, comprehensive coverage of the New York Mets, New York Jets and all New York sports, plus video, scores, schedules and standings."
+            alt="Insightt"
+            link="https://www.sny.tv/"
+            picture={sny}
+          />
           <Project
             title="Insightt.io"
             description="Insightt is a revolutionary tool that was designed and built by a repossessor. With great need comes great innovation, and Insightt is nothing short of that."
