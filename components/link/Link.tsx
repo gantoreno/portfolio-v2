@@ -1,4 +1,4 @@
-import NextLink, { LinkProps as NextLinkProps } from "next/link"
+import NextLink from "next/link"
 import { BiLinkExternal } from "react-icons/bi"
 
 import styles from "./Link.module.css"

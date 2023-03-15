@@ -1,5 +1,4 @@
 import React from "react"
-import reactSyntaxHighlighter from "react-syntax-highlighter"
 import styles from "./Timeline.module.css"
 
 const Timeline: React.FC<React.HTMLAttributes<HTMLElement>> = ({
