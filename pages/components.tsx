@@ -85,7 +85,7 @@ export default Button`}
           <Project
             title="Project 1"
             description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptates voluptatum enim porro molestiae sint officiis eos libero nam expedita harum ea neque eaque eum deserunt, commodi a. Asperiores, nam?"
-            picture={img}
+            picture="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
             alt="Project 1"
             link="#"
           />
@@ -113,7 +113,7 @@ export default Button`}
         <Section>
           <Figure>
             <Figure.Image
-              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80"
+              src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
               alt="Figure"
             />
             <Figure.Caption>
@@ -163,6 +163,7 @@ export default Button`}
             date="Jul 17, 2022"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             link="#"
+            thumbnail="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
           />
           <Article.Thumbnail
             title="Article"
@@ -170,6 +171,7 @@ export default Button`}
             date="Jul 17, 2022"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             link="#"
+            thumbnail="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
           />
         </Section>
       </Container>

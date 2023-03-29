@@ -9,7 +9,7 @@ import styles from "./Project.module.css"
 type ProjectProps = {
   title: string
   description: string
-  picture: StaticImageData
+  picture: string | StaticImageData
   alt: string
   link: string
 }
