@@ -324,8 +324,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
               duration={post.duration}
               description={post.description}
               date={post.date}
-              link={"/blog/" + post.slug}
-              thumbnail={post.hero}
+              link={post.slug}
+              thumbnail={post.featuredImage}
             />
           ))}
         </Section>

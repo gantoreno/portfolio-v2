@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { serialize } from "next-mdx-remote/serialize"
+import { getReadingTime } from "./reading"
 
 const root = process.cwd()
 
@@ -11,7 +12,7 @@ export type PostMetadata = {
   duration: number
   description: string
   date: string
-  hero: string
+  featuredImage: string
 }
 
 export const getPosts = async () => {
@@ -26,12 +27,13 @@ export const getPostBySlug = async (slug: string) => {
 
   const { data, content } = matter(mdx)
   const source = await serialize(content, {})
+  const duration = getReadingTime(content)
 
   return {
     source,
     meta: {
       ...data,
-      slug,
+      duration,
       date: new Date(data.date).toDateString(),
     },
   }
