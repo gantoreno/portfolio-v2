@@ -12,6 +12,7 @@ export type PostMetadata = {
   duration: number
   description: string
   date: string
+  keywords: string
   featuredImage: string
 }
 

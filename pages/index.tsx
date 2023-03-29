@@ -41,7 +41,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           name="description"
           content="Software engineer, full-stack web developer"
         />
-        <meta name="keyword" content="portfolio, software engineer" />
+        <meta name="keywords" content="portfolio, software engineer" />
       </Head>
       <Header>
         <Grid columns={[2, 1]}>

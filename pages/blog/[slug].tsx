@@ -1,6 +1,7 @@
 import { Components } from "@mdx-js/react/lib"
 import { GetStaticPropsContext } from "next"
 import { MDXRemote } from "next-mdx-remote"
+import Head from "next/head"
 import reactNodeToString from "react-node-to-string"
 
 import Article from "../../components/article/Article"
@@ -48,8 +49,16 @@ const components: Components = {
 
 // @ts-expect-error
 const Post = ({ source, meta }) => {
+  const pageTitle = `Gabriel Moreno - ${meta.title}`
+
   return (
     <Article>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="author" content={meta.author} />
+        <meta name="description" content={meta.description} />
+        <meta name="keywords" content={meta.keywords} />
+      </Head>
       <Header>
         <Article.Hero src={meta.featuredImage} />
         <Spacer bottom="var(--spacing-minor)">
