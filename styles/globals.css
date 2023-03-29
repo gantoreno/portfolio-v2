@@ -23,7 +23,7 @@
   --border-radius: 3px;
   --container-width: 550px;
   --line-height: 1.5em;
-  --navbar-height: 5rem;
+  --navbar-height: 86.5px;
 
   --spacing-minor: 2rem;
   --spacing-major: 4rem;
@@ -126,6 +126,21 @@ i {
 img[alt="Avatar"] {
   width: 100% !important;
   height: auto !important;
+}
+
+blockquote div p:last-child {
+  margin-bottom: 0 !important;
+}
+
+ul,
+ol {
+  line-height: var(--line-height);
+  list-style-position: inside;
+  margin-bottom: var(--spacing-minor);
+}
+
+ul ul {
+  margin-left: var(--spacing-minor);
 }
 
 @media screen and (max-width: calc(550px + 2rem)) {

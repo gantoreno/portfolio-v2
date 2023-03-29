@@ -8,8 +8,6 @@ import Experience from "../components/experience/Experience"
 import Figure from "../components/figure/Figure"
 import Heading from "../components/heading/Heading"
 import Link from "../components/link/Link"
-import Navbar from "../components/navbar/Navbar"
-import Page from "../components/page/Page"
 import Paragraph from "../components/pragraph/Paragraph"
 import Project from "../components/project/Project"
 import Quote from "../components/quote/Quote"
@@ -21,8 +19,7 @@ import img from "../assets/img/sample.jpg"
 
 const Components: NextPage = () => {
   return (
-    <Page>
-      <Navbar />
+    <>
       <Container>
         <Section>
           <Heading level={1}>Heading 1</Heading>
@@ -114,11 +111,16 @@ export default Button`}
           </div>
         </Section>
         <Section>
-          <Figure
-            src={img}
-            alt="figure"
-            caption="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, mollitia."
-          />
+          <Figure>
+            <Figure.Image
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80"
+              alt="Figure"
+            />
+            <Figure.Caption>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+              mollitia.
+            </Figure.Caption>
+          </Figure>
         </Section>
         <Section>
           <Timeline>
@@ -155,14 +157,14 @@ export default Button`}
           </Timeline>
         </Section>
         <Section>
-          <Article
+          <Article.Thumbnail
             title="Article"
             duration={10}
             date="Jul 17, 2022"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             link="#"
           />
-          <Article
+          <Article.Thumbnail
             title="Article"
             duration={10}
             date="Jul 17, 2022"
@@ -171,7 +173,7 @@ export default Button`}
           />
         </Section>
       </Container>
-    </Page>
+    </>
   )
 }
 

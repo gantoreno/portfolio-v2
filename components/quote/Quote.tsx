@@ -17,6 +17,7 @@ const Quote: React.FC<QuoteProps> = ({
     <blockquote
       className={classNames(styles.quote, {
         [styles.compact]: compact,
+        [styles.single]: icon,
       })}
       {...rest}
     >

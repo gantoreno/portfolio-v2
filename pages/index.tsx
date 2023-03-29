@@ -10,8 +10,6 @@ import Header from "../components/header/Header"
 import Heading from "../components/heading/Heading"
 import Link from "../components/link/Link"
 import Main from "../components/main/Main"
-import Navbar from "../components/navbar/Navbar"
-import Page from "../components/page/Page"
 import Paragraph from "../components/pragraph/Paragraph"
 import Project from "../components/project/Project"
 import Quote from "../components/quote/Quote"
@@ -30,7 +28,7 @@ import sny from "../assets/img/sny.png"
 
 const Home: NextPage = () => {
   return (
-    <Page>
+    <>
       <Head>
         <title>Gabriel Moreno - Welcome</title>
         <meta
@@ -39,7 +37,6 @@ const Home: NextPage = () => {
         />
         <meta name="keyword" content="portfolio, software engineer" />
       </Head>
-      <Navbar />
       <Header>
         <Grid columns={[2, 1]}>
           <Center axis="vertical">
@@ -316,8 +313,7 @@ const Home: NextPage = () => {
           </Paragraph>
         </Section>
       </Main>
-      <Footer />
-    </Page>
+    </>
   )
 }
 

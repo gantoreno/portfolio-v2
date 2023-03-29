@@ -155,7 +155,7 @@ const gabrielLight: { [key: string]: CSSProperties } = {
     color: "#000000",
   },
   "atrule.url.function": {
-    color: "#AA8844",
+    color: "#447799",
   },
   "atrule.url.punctuation": {
     color: "#000000",
@@ -170,10 +170,10 @@ const gabrielLight: { [key: string]: CSSProperties } = {
     color: "#884444",
   },
   function: {
-    color: "#AA8844",
+    color: "#447799",
   },
   "function.maybe-class-name": {
-    color: "#AA8844",
+    color: "#447799",
   },
   regex: {
     color: "#666699",
@@ -200,7 +200,7 @@ const gabrielLight: { [key: string]: CSSProperties } = {
     color: "#000000",
   },
   "punctuation.interpolation-punctuation": {
-    color: "#884444",
+    color: "#447799",
   },
   variable: {
     color: "#000000",

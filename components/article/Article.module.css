@@ -21,3 +21,7 @@
   color: var(--text-foreground);
   margin-bottom: 0.5rem;
 }
+
+.hero {
+  border-radius: var(--border-radius);
+}
