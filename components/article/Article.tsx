@@ -18,6 +18,7 @@ type ArticleThumbnailProps = {
   description: string
   date: string
   link: string
+  thumbnail: string | ImageProps["src"]
 }
 
 const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
@@ -26,18 +27,31 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
   description,
   date,
   link,
+  thumbnail,
 }) => {
   return (
-    <article className={styles.article}>
-      <div className={styles.title}>
-        <Heading level={6} compact>
-          {title}
-        </Heading>
-        <span className={styles.duration}> ({duration} min read)</span>
+    <article className={styles.container}>
+      <Image
+        className={styles.thumbnail}
+        src={thumbnail}
+        alt=""
+        width="120px"
+        height="120px"
+        layout="intrinsic"
+        objectFit="cover"
+        objectPosition="center"
+      />
+      <div className={styles.content}>
+        <div className={styles.title}>
+          <Heading level={6} compact inline>
+            {title}
+          </Heading>
+          <span className={styles.duration}> ({duration} min read)</span>
+        </div>
+        <div className={styles.date}>{date}</div>
+        <div className={styles.description}>{description}</div>
+        <Link href={link}>Read</Link>
       </div>
-      <div className={styles.date}>{date}</div>
-      <div className={styles.description}>{description}</div>
-      <Link href={link}>Read</Link>
     </article>
   )
 }

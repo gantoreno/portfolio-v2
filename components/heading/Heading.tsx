@@ -11,6 +11,7 @@ type HeadingProps = {
   compact?: boolean
   light?: boolean
   linkable?: boolean
+  inline?: boolean
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -19,6 +20,7 @@ const Heading: React.FC<HeadingProps> = ({
   compact = false,
   light = false,
   linkable = false,
+  inline = false,
   ...rest
 }) => {
   const Component = `h${level}` as keyof JSX.IntrinsicElements
@@ -32,6 +34,7 @@ const Heading: React.FC<HeadingProps> = ({
       className={classNames(styles.heading, styles[`level-${level}`], {
         [styles.compact]: compact,
         [styles.light]: light,
+        [styles.inline]: inline,
       })}
       {...rest}
     >

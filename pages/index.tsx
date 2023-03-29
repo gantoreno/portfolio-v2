@@ -4,7 +4,6 @@ import Image from "next/image"
 
 import Center from "../components/center/Center"
 import Experience from "../components/experience/Experience"
-import Footer from "../components/footer/Footer"
 import Grid from "../components/grid/Grid"
 import Header from "../components/header/Header"
 import Heading from "../components/heading/Heading"
@@ -25,8 +24,15 @@ import resident from "../assets/img/resident.png"
 import resivenca from "../assets/img/resivenca.png"
 import totalcom from "../assets/img/totalcom.png"
 import sny from "../assets/img/sny.png"
+import Article from "../components/article/Article"
 
-const Home: NextPage = () => {
+import { getPostsWithMetadata, PostMetadata } from "../lib/mdx"
+
+type HomeProps = {
+  posts: PostMetadata[]
+}
+
+const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <Head>
@@ -41,7 +47,11 @@ const Home: NextPage = () => {
         <Grid columns={[2, 1]}>
           <Center axis="vertical">
             <div>
-              <Heading level={1}>Hello there! I&apos;m Gabriel</Heading>
+              <Spacer bottom="2rem">
+                <Heading level={1} compact>
+                  Hello there! I&apos;m Gabriel
+                </Heading>
+              </Spacer>
               <Heading level={2} compact light>
                 Software Engineer
               </Heading>
@@ -305,12 +315,19 @@ const Home: NextPage = () => {
             I&apos;ve played with the idea of starting to write my thoughts and
             experiences in some sort of blog, this is where I&apos;ll compile
             most of the important things I&apos;ve learned and experienced
-            during my whole coding journey, so stay tuned for that!
+            during my whole coding journey. Feel free to look around!
           </Paragraph>
-          <Paragraph>
-            Once it&apos;s done, the <Link href="/blog">Blog</Link> link should
-            be available.
-          </Paragraph>
+          {posts.map((post) => (
+            <Article.Thumbnail
+              key={post.slug}
+              title={post.title}
+              duration={post.duration}
+              description={post.description}
+              date={post.date}
+              link={"/blog/" + post.slug}
+              thumbnail={post.hero}
+            />
+          ))}
         </Section>
       </Main>
     </>
@@ -318,3 +335,9 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export async function getStaticProps() {
+  const posts = await getPostsWithMetadata()
+
+  return { props: { posts } }
+}

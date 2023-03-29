@@ -9,6 +9,10 @@
   line-height: 1em;
 }
 
+.inline {
+  display: inline-block;
+}
+
 .heading a {
   text-decoration: none;
 }

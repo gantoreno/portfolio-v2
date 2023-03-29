@@ -2,12 +2,30 @@
   margin-bottom: var(--spacing-minor);
 }
 
+.container {
+  margin-bottom: var(--spacing-minor);
+  display: flex;
+  gap: var(--spacing-minor);
+}
+
+.thumbnail {
+  border-radius: var(--border-radius);
+}
+
+.thumbnail img {
+  width: 400px !important;
+}
+
 .article h6 {
   display: inline-block;
 }
 
 .title {
   margin-bottom: 0.5rem;
+}
+
+.content {
+  width: calc(100% - 120px - var(--spacing-minor));
 }
 
 .date,
