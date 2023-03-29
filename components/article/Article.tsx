@@ -43,9 +43,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
       />
       <div className={styles.content}>
         <div className={styles.title}>
-          <Heading level={6} compact inline>
-            {title}
-          </Heading>
+          <strong>{title}</strong>
           <span className={styles.duration}> ({duration} min read)</span>
         </div>
         <div className={styles.date}>{date}</div>
