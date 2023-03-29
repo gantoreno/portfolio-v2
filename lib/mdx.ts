@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { DateTime } from "luxon"
 import { serialize } from "next-mdx-remote/serialize"
 import { getReadingTime } from "./reading"
 
@@ -27,15 +28,19 @@ export const getPostBySlug = async (slug: string) => {
   )
 
   const { data, content } = matter(mdx)
+
   const source = await serialize(content, {})
   const duration = getReadingTime(content)
+  const date = DateTime.fromISO(
+    new Date(data.date).toISOString()
+  ).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)
 
   return {
     source,
     meta: {
       ...data,
       duration,
-      date: new Date(data.date).toDateString(),
+      date,
     },
   }
 }

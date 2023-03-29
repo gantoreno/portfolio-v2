@@ -62,8 +62,8 @@ const Post = ({ source, meta }) => {
       <Header>
         <Article.Hero src={meta.featuredImage} />
         <Spacer bottom="var(--spacing-minor)">
-          By <strong>{meta.author}</strong> • {meta.date} • {meta.duration} min
-          read
+          By <strong>{meta.author}</strong> on {meta.date} ({meta.duration} min
+          read)
         </Spacer>
         <Heading level={1} compact>
           {meta.title}
