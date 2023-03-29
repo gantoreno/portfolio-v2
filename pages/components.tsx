@@ -15,8 +15,6 @@ import Repository from "../components/repository/Repository"
 import Section from "../components/section/Section"
 import Timeline from "../components/timeline/Timeline"
 
-import img from "../assets/img/sample.jpg"
-
 const Components: NextPage = () => {
   return (
     <>
