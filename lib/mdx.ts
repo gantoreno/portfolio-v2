@@ -1,8 +1,9 @@
 import fs from "fs"
-import path from "path"
 import matter from "gray-matter"
 import { DateTime } from "luxon"
 import { serialize } from "next-mdx-remote/serialize"
+import path from "path"
+
 import { getReadingTime } from "./reading"
 
 const root = process.cwd()
