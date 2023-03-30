@@ -27,7 +27,7 @@ const Project: React.FC<ProjectProps> = ({
         <div className={styles.information}>
           <div className={styles.title}>{title}</div>
           <div className={styles.description}>
-            <Paragraph.Expandable at={100}>{description}</Paragraph.Expandable>
+            <Paragraph compact>{description}</Paragraph>
           </div>
           <Link href={link} target="_blank">
             View

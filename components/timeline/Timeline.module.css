@@ -22,12 +22,12 @@
 .timelineItem::after {
   content: "";
   position: absolute;
-  top: 0.25rem;
-  left: -1.58rem;
-  width: calc(var(--border-radius) * 3);
-  height: calc(var(--border-radius) * 3);
+  top: 0.35rem;
+  left: -1.516rem;
+  width: calc(var(--border-radius) * 2.4);
+  height: calc(var(--border-radius) * 2.4);
   background-color: var(--foreground);
   z-index: 10;
   /* rotate: 45deg; */
-  border-radius: var(--border-radius);
+  border-radius: 50%;
 }

@@ -183,42 +183,42 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           </Paragraph>
           <Project
             title="SNY"
-            description="The home of all things New York sports, comprehensive coverage of the New York Mets, New York Jets and all New York sports, plus video, scores, schedules and standings."
-            alt="Insightt"
+            description="The home of all things New York sports, New York Mets, New York Jets and more."
+            alt="SNY"
             link="https://www.sny.tv/"
             picture={sny}
           />
           <Project
             title="Insightt.io"
-            description="Insightt is a revolutionary tool that was designed and built by a repossessor. With great need comes great innovation, and Insightt is nothing short of that."
+            description="Insightt is a revolutionary tool that was designed and built by a repossessor. "
             alt="Insightt"
             link="https://www.insightt.io/"
             picture={insightt}
           />
           <Project
             title="Resident.io"
-            description="Find apartments, choose lease period, sign required documents, enjoy your new apartment. Student housing made easy."
+            description="Find apartments, choose lease period, sign required documents, enjoy your new apartment."
             alt="Resident"
             link="https://app.resident.io/"
             picture={resident}
           />
           <Project
             title="Totalcom Venezuela"
-            description="Proveedor de internet empresarial por excelencia, confiabilidad del servicio las 24 Horas al día, los 365 días del año. 60 años en telecomunicaciones."
+            description="Proveedor de internet empresarial por excelencia, 24 Horas al día, 365 días al año."
             alt="Totalcom"
             link="https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
             picture={totalcom}
           />
           <Project
             title="Resivenca I+E"
-            description="Internet + Energía, soluciones de infraestructura e interconexión a tu alcance en toda la región del occidente de Venezuela."
+            description="Internet + Energía, soluciones de infraestructura e interconexión a tu alcance."
             alt="Resivenca"
             link="https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
             picture={resivenca}
           />
           <Project
             title="CWV Management System"
-            description="Centralized project storage &amp; repository management tool for CodeWork Venezuela's internal &amp; external projects, templates, and resource sets."
+            description="Centralized project storage &amp; repository management, templates, and resources."
             alt="CWV"
             link="https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
             picture={codework}
