@@ -162,6 +162,7 @@ export default Button`}
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             link="#"
             thumbnail="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
+            tags={["Tag 1", "Tag 2"]}
           />
           <Article.Thumbnail
             title="Article"
@@ -170,6 +171,7 @@ export default Button`}
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             link="#"
             thumbnail="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
+            tags={["Tag 3"]}
           />
         </Section>
       </Container>

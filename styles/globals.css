@@ -25,6 +25,8 @@
   --line-height: 1.5em;
   --navbar-height: 86.5px;
 
+  --spacing-nano: 0.5rem;
+  --spacing-micro: 1rem;
   --spacing-minor: 2rem;
   --spacing-major: 4rem;
 
@@ -57,6 +59,7 @@
 
   --soft-foreground: var(--color-gray-1);
   --soft-background: var(--color-gray-14);
+  --soft-background-hover: var(--color-gray-13);
 
   --selection-background: #00000021;
 
@@ -100,10 +103,16 @@ html:has(.dark-mode) {
 
   --soft-foreground: var(--color-gray-14);
   --soft-background: var(--color-gray-1);
+  --soft-background-hover: var(--color-gray-2);
 
   --selection-background: #ffffff21;
 
   --navbar-background: #000000aa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 code {

@@ -3,6 +3,7 @@ import matter from "gray-matter"
 import { DateTime } from "luxon"
 import { serialize } from "next-mdx-remote/serialize"
 import path from "path"
+import slugify from "slugify"
 
 import { getReadingTime } from "./reading"
 
@@ -15,6 +16,7 @@ export type PostMetadata = {
   description: string
   date: string
   keywords: string
+  tags: string[]
   featuredImage: string
 }
 
@@ -34,7 +36,9 @@ export const getPostBySlug = async (slug: string) => {
   const duration = getReadingTime(content)
   const date = DateTime.fromISO(
     new Date(data.date).toISOString()
-  ).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)
+  ).toLocaleString(DateTime.DATE_MED)
+  const tags = data.keywords.replace(", ", ",").split(",")
+  // .map((tag: string) => slugify(tag).toLowerCase())
 
   return {
     source,
@@ -42,6 +46,7 @@ export const getPostBySlug = async (slug: string) => {
       ...data,
       duration,
       date,
+      tags,
     },
   }
 }

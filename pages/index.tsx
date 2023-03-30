@@ -326,6 +326,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
               date={post.date}
               link={post.slug}
               thumbnail={post.featuredImage}
+              tags={post.tags}
             />
           ))}
         </Section>

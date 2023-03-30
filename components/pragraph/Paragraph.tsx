@@ -21,10 +21,12 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, compact = false }) => {
 
 type ExpandableParagraphProps = ParagraphProps & {
   at?: number
+  disabled?: boolean
 }
 
 const ExpandableParagraph: React.FC<ExpandableParagraphProps> = ({
   at = 150,
+  disabled = false,
   children,
 }) => {
   const text = children as string
@@ -37,7 +39,7 @@ const ExpandableParagraph: React.FC<ExpandableParagraphProps> = ({
   return (
     <p className={styles.expandable}>
       {showReadMore ? text.slice(0, at) + "..." : text}
-      {shouldWrap && (
+      {shouldWrap && !disabled && (
         <button
           onClick={toggleReadMore}
           className={classNames(styles.showMore, {
