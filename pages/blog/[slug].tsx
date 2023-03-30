@@ -74,11 +74,11 @@ const Post = ({ source, meta }) => {
         </Spacer>
       </Header>
       <MDXRemote {...source} components={components} />
-      <div style={{ marginTop: "var(--spacing-major)", lineHeight: "2.3rem" }}>
+      <Spacer top="var(--spacing-major)" height="2.3rem">
         {meta.tags.map((tag: string) => (
           <Article.Tag key={tag}>{tag}</Article.Tag>
         ))}
-      </div>
+      </Spacer>
     </Article>
   )
 }

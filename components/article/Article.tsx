@@ -49,7 +49,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
   return (
     <article className={styles.container}>
       <Grid columns={[1, 2]}>
-        <div className={styles.thumbnailContainer}>
+        <a href={link} className={styles.thumbnailContainer}>
           <Image
             className={styles.thumbnail}
             src={thumbnail}
@@ -57,7 +57,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
             layout="fill"
             objectFit="cover"
           />
-        </div>
+        </a>
         <div className={styles.content}>
           <a href={link}>
             <div className={styles.title}>

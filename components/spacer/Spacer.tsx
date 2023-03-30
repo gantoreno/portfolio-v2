@@ -8,6 +8,7 @@ type SpacerProps = React.HTMLAttributes<HTMLElement> & {
   align?: "left" | "right" | "center" | "justify"
   padding?: boolean
   inline?: boolean
+  height?: string
 }
 
 const Spacer: React.FC<SpacerProps> = ({
@@ -18,6 +19,7 @@ const Spacer: React.FC<SpacerProps> = ({
   inline = false,
   padding = false,
   align = "left",
+  height = "inherit",
   children,
 }) => {
   return (
@@ -26,6 +28,7 @@ const Spacer: React.FC<SpacerProps> = ({
         [padding ? "padding" : "margin"]: `${top} ${right} ${bottom} ${left}`,
         display: inline ? "inline" : "block",
         textAlign: align,
+        lineHeight: height,
       }}
     >
       {children}
