@@ -6,7 +6,6 @@
   margin-top: var(--spacing-major);
   font-size: inherit;
   position: relative;
-  line-height: 1em;
 }
 
 .inline {

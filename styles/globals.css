@@ -146,10 +146,21 @@ ol {
   line-height: var(--line-height);
   list-style-position: inside;
   margin-bottom: var(--spacing-minor);
+  vertical-align: text-top;
+}
+
+ul li {
+  list-style-position: outside;
+  margin-left: 1em;
 }
 
 ul ul {
+  list-style-position: outside;
   margin-left: var(--spacing-minor);
+}
+
+small {
+  color: var(--disabled-foreground);
 }
 
 @media screen and (max-width: calc(550px + 2rem)) {

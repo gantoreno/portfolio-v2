@@ -101,4 +101,5 @@ const ArticleHero: React.FC<ImageProps> = ({ src, alt }) => {
 export default Object.assign(Article, {
   Thumbnail: ArticleThumbnail,
   Hero: ArticleHero,
+  Tag: ArticleTag,
 })

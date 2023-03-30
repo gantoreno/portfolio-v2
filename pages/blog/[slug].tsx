@@ -61,15 +61,20 @@ const Post = ({ source, meta }) => {
       </Head>
       <Header>
         <Article.Hero src={meta.featuredImage} />
+        <Heading level={1}>{meta.title}</Heading>
         <Spacer bottom="var(--spacing-minor)">
-          By <strong>{meta.author}</strong> on {meta.date} ({meta.duration} min
-          read)
+          <small>
+            By <strong>{meta.author}</strong> on {meta.date} ({meta.duration}{" "}
+            min read)
+          </small>
         </Spacer>
-        <Heading level={1} compact>
-          {meta.title}
-        </Heading>
       </Header>
       <MDXRemote {...source} components={components} />
+      <div style={{ marginTop: "var(--spacing-major)", lineHeight: "2.3rem" }}>
+        {meta.tags.map((tag: string) => (
+          <Article.Tag key={tag}>{tag}</Article.Tag>
+        ))}
+      </div>
     </Article>
   )
 }

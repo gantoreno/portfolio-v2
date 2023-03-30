@@ -69,6 +69,7 @@
 }
 
 .tag {
+  white-space: nowrap;
   padding: 0.25rem 0.75rem;
   margin-right: var(--spacing-nano);
   border-radius: var(--border-radius);
