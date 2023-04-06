@@ -54,7 +54,7 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
               description={post.description}
               date={post.date}
               link={post.slug}
-              thumbnail={post.featuredImage}
+              thumbnail={post.image}
               tags={post.tags}
             />
           ))

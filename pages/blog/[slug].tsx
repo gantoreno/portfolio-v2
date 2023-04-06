@@ -57,10 +57,10 @@ const Post = ({ source, meta }) => {
         <title>{pageTitle}</title>
         <meta name="author" content={meta.author} />
         <meta name="description" content={meta.description} />
-        <meta name="keywords" content={meta.keywords} />
+        <meta name="keywords" content={meta.tags.join(", ").toLowerCase()} />
       </Head>
       <Header>
-        <Article.Hero src={meta.featuredImage} />
+        <Article.Hero src={meta.image} />
         <Spacer bottom="var(--spacing-minor)">
           <Heading level={1} compact>
             {meta.title}

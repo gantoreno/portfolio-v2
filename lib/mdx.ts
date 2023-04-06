@@ -10,13 +10,13 @@ const root = process.cwd()
 
 export type PostMetadata = {
   slug: string
+  image: string
   title: string
-  duration: number
   description: string
+  author: string
   date: string
-  keywords: string
   tags: string[]
-  featuredImage: string
+  duration: number
 }
 
 export const getPosts = async () => {
@@ -36,8 +36,6 @@ export const getPostBySlug = async (slug: string) => {
   const date = DateTime.fromISO(
     new Date(data.date).toISOString()
   ).toLocaleString(DateTime.DATE_MED)
-  const tags = data.keywords.replace(", ", ",").split(",")
-  // .map((tag: string) => slugify(tag).toLowerCase())
 
   return {
     source,
@@ -45,7 +43,6 @@ export const getPostBySlug = async (slug: string) => {
       ...data,
       duration,
       date,
-      tags,
     },
   }
 }
