@@ -13,16 +13,38 @@ type OgProps = {
 
 const Og: React.FC<OgProps> = ({ title, description, duration }) => {
   return (
-    <div className={styles.og}>
-      <div className={styles.wrapper}>
-        <Image src={avatar} alt="Avatar" width={360} height={360} />
-        <div className={styles.meta}>
-          <Heading level={1} compact>
+    <div
+      style={{
+        width: 1200,
+        height: 630,
+        border: "1px solid",
+        fontFamily: "Google Sans Mono",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "8rem",
+          height: "100%",
+        }}
+      >
+        <img
+          src="/assets/img/avatar.png"
+          alt="Avatar"
+          style={{
+            width: "360px !important",
+            height: "360px !important",
+          }}
+        />
+        <div>
+          <h1 style={{ fontSize: "5rem", color: "#000", marginBottom: "2rem" }}>
             {title}
-          </Heading>
-          <Paragraph compact>
+          </h1>
+          <p style={{ fontSize: "2rem", color: "#888" }}>
             {description} ({duration} min read)
-          </Paragraph>
+          </p>
         </div>
       </div>
     </div>

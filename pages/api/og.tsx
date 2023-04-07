@@ -23,7 +23,45 @@ export default async function handler(req: Request) {
   const duration = searchParams.get("duration") ?? "0"
 
   return new ImageResponse(
-    <Og title={title} description={description} duration={duration} />,
+    (
+      <div
+        style={{
+          width: 1200,
+          height: 630,
+          border: "1px solid",
+          fontFamily: "Google Sans Mono",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "8rem",
+            height: "100%",
+          }}
+        >
+          <img
+            src="https://gantoreno.com/assets/img/avatar.png"
+            alt="Avatar"
+            style={{
+              width: "360px !important",
+              height: "360px !important",
+            }}
+          />
+          <div>
+            <h1
+              style={{ fontSize: "5rem", color: "#000", marginBottom: "2rem" }}
+            >
+              {title}
+            </h1>
+            <p style={{ fontSize: "2rem", color: "#888" }}>
+              {description} ({duration} min read)
+            </p>
+          </div>
+        </div>
+      </div>
+    ),
     {
       width: 1200,
       height: 630,
