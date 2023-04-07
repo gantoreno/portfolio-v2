@@ -80,10 +80,7 @@ const Post = ({ source, meta }) => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
-        <meta
-          property="og:description"
-          content="My journey on becoming a technical leader and the things I've learned so far."
-        />
+        <meta property="og:description" content={meta.description} />
         <meta
           property="og:image"
           content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}`}
