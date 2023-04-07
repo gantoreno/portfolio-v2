@@ -22,7 +22,7 @@
 .timelineItem::after {
   content: "";
   position: absolute;
-  top: 0.5rem;
+  top: 0.4rem;
   left: -1.516rem;
   width: calc(var(--border-radius) * 2.4);
   height: calc(var(--border-radius) * 2.4);
