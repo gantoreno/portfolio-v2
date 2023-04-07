@@ -8,6 +8,7 @@ import Experience from "../components/experience/Experience"
 import Figure from "../components/figure/Figure"
 import Heading from "../components/heading/Heading"
 import Link from "../components/link/Link"
+import Og from "../components/og/Og"
 import Paragraph from "../components/pragraph/Paragraph"
 import Project from "../components/project/Project"
 import Quote from "../components/quote/Quote"
@@ -18,6 +19,11 @@ import Timeline from "../components/timeline/Timeline"
 const Components: NextPage = () => {
   return (
     <>
+      <Og
+        title="Title"
+        description="Lorem ipsum dolor sit amet."
+        duration="10"
+      />
       <Container>
         <Section>
           <Heading level={1}>Heading 1</Heading>
