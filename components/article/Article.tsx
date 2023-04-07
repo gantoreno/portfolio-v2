@@ -66,11 +66,6 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
             <div className={styles.date}>
               {date} ({duration} min read)
             </div>
-            <div className={styles.description}>
-              <Paragraph.Expandable at={42} disabled>
-                {description}
-              </Paragraph.Expandable>
-            </div>
           </a>
           <div className={styles.tags}>
             {tags.length > 0 && <ArticleTag>{tags[0]}</ArticleTag>}

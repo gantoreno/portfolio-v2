@@ -10,7 +10,7 @@
   top: 0.5rem;
   left: 0;
   width: var(--border-radius);
-  height: calc(100% - 1rem);
+  height: calc(100% - 1.1rem);
   background: var(--foreground);
   border-radius: var(--border-radius);
 }
@@ -22,7 +22,7 @@
 .timelineItem::after {
   content: "";
   position: absolute;
-  top: 0.35rem;
+  top: 0.5rem;
   left: -1.516rem;
   width: calc(var(--border-radius) * 2.4);
   height: calc(var(--border-radius) * 2.4);

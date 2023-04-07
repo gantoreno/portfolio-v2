@@ -5,7 +5,7 @@
   text-decoration-line: underline;
   text-decoration-style: dotted;
   font-size: inherit;
-  vertical-align: text-top;
+  line-height: var(--line-height);
 }
 
 .pointer {
