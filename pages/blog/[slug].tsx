@@ -73,10 +73,34 @@ const Post = ({ source, meta }) => {
         <meta name="author" content={meta.author} />
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.tags.join(", ").toLowerCase()} />
+
+        <meta
+          property="og:url"
+          content={`https://gantoreno.com/blog/${meta.slug}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={pageTitle} />
+        <meta
+          property="og:description"
+          content="My journey on becoming a technical leader and the things I've learned so far."
+        />
         <meta
           property="og:image"
           content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}`}
         />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="gantoreno.com" />
+        <meta
+          property="twitter:url"
+          content={`https://gantoreno.com/blog/${meta.slug}`}
+        />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta
+          name="twitter:image"
+          content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}`}
+        ></meta>
       </Head>
       <Header>
         <Article.Hero src={meta.image} />
