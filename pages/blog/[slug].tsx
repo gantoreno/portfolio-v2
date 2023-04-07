@@ -73,6 +73,10 @@ const Post = ({ source, meta }) => {
         <meta name="author" content={meta.author} />
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.tags.join(", ").toLowerCase()} />
+        <meta
+          property="og:image"
+          content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}`}
+        />
       </Head>
       <Header>
         <Article.Hero src={meta.image} />
