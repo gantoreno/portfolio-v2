@@ -29,6 +29,7 @@ export default async function handler(req: Request) {
           height: 630,
           backgroundColor: "#fff",
           fontFamily: "Product Sans",
+          lineHeight: "1.5em",
           display: "flex",
         }}
       >
@@ -37,7 +38,8 @@ export default async function handler(req: Request) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "8rem",
+            padding: "8rem 0px",
+            margin: "0px auto",
             height: "100%",
           }}
         >
@@ -49,10 +51,10 @@ export default async function handler(req: Request) {
               height: "360px !important",
             }}
           />
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: 600 }}>
             <h1
               style={{
-                fontSize: 80,
+                fontSize: 50,
                 color: "#000",
                 fontWeight: "bold",
                 marginBottom: "2rem",
@@ -60,7 +62,7 @@ export default async function handler(req: Request) {
             >
               {title}
             </h1>
-            <p style={{ fontSize: 32, color: "#888" }}>
+            <p style={{ fontSize: 30, color: "#888" }}>
               {description} ({duration} min read)
             </p>
           </div>
