@@ -2,7 +2,6 @@ import { Components } from "@mdx-js/react/lib"
 import { GetStaticPropsContext } from "next"
 import { MDXRemote } from "next-mdx-remote"
 import Head from "next/head"
-import React, { useEffect } from "react"
 import reactNodeToString from "react-node-to-string"
 
 import Article from "../../components/article/Article"
@@ -14,7 +13,6 @@ import Link from "../../components/link/Link"
 import Paragraph from "../../components/pragraph/Paragraph"
 import Quote from "../../components/quote/Quote"
 import Spacer from "../../components/spacer/Spacer"
-import usePageLoad from "../../hooks/usePageLoad"
 
 import { getPostBySlug, getPosts } from "../../lib/mdx"
 
@@ -68,8 +66,6 @@ const components: Components = {
 const Post = ({ source, meta }) => {
   const pageTitle = `Gabriel Moreno - ${meta.title}`
 
-  const isLoaded = usePageLoad()
-
   return (
     <Article>
       <Head>
@@ -78,30 +74,26 @@ const Post = ({ source, meta }) => {
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.tags.join(", ").toLowerCase()} />
       </Head>
-      {isLoaded && (
-        <>
-          <Header>
-            <Article.Hero src={meta.image} />
-            <Spacer bottom="var(--spacing-minor)">
-              <Heading level={1} compact>
-                {meta.title}
-              </Heading>
-            </Spacer>
-            <Spacer bottom="var(--spacing-minor)">
-              <small>
-                By <strong>{meta.author}</strong> on {meta.date} (
-                {meta.duration} min read)
-              </small>
-            </Spacer>
-          </Header>
-          <MDXRemote {...source} components={components} />
-          <Spacer top="var(--spacing-major)" height="2.3rem">
-            {meta.tags.map((tag: string) => (
-              <Article.Tag key={tag}>{tag}</Article.Tag>
-            ))}
-          </Spacer>
-        </>
-      )}
+      <Header>
+        <Article.Hero src={meta.image} />
+        <Spacer bottom="var(--spacing-minor)">
+          <Heading level={1} compact>
+            {meta.title}
+          </Heading>
+        </Spacer>
+        <Spacer bottom="var(--spacing-minor)">
+          <small>
+            By <strong>{meta.author}</strong> on {meta.date} ({meta.duration}{" "}
+            min read)
+          </small>
+        </Spacer>
+      </Header>
+      <MDXRemote {...source} components={components} />
+      <Spacer top="var(--spacing-major)" height="2.3rem">
+        {meta.tags.map((tag: string) => (
+          <Article.Tag key={tag}>{tag}</Article.Tag>
+        ))}
+      </Spacer>
     </Article>
   )
 }
