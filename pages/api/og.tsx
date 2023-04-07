@@ -5,10 +5,10 @@ export const config = {
 }
 
 const fontRegular = fetch(
-  new URL("../../fonts/Google Sans Mono Regular.ttf", import.meta.url)
+  new URL("../../fonts/Product Sans Regular.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer())
 const fontBold = fetch(
-  new URL("../../fonts/Google Sans Mono Bold.ttf", import.meta.url)
+  new URL("../../fonts/Product Sans Bold.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 export default async function handler(req: Request) {
@@ -28,7 +28,7 @@ export default async function handler(req: Request) {
           width: 1200,
           height: 630,
           backgroundColor: "#fff",
-          fontFamily: "Google Sans Mono",
+          fontFamily: "Product Sans",
           display: "flex",
         }}
       >
@@ -52,7 +52,7 @@ export default async function handler(req: Request) {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h1
               style={{
-                fontSize: "5rem",
+                fontSize: 80,
                 color: "#000",
                 fontWeight: "bold",
                 marginBottom: "2rem",
@@ -60,7 +60,7 @@ export default async function handler(req: Request) {
             >
               {title}
             </h1>
-            <p style={{ fontSize: "2rem", color: "#888" }}>
+            <p style={{ fontSize: 32, color: "#888" }}>
               {description} ({duration} min read)
             </p>
           </div>
