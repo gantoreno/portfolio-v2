@@ -58,10 +58,10 @@ export default async function handler(req: Request) {
                 marginBottom: "2rem",
               }}
             >
-              Title
+              {title}
             </h1>
             <p style={{ fontSize: "2rem", color: "#888" }}>
-              Description (10 min read)
+              {description} ({duration} min read)
             </p>
           </div>
         </div>
