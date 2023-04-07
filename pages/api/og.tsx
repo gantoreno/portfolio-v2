@@ -1,5 +1,4 @@
 import { ImageResponse } from "@vercel/og"
-import Og from "../../components/og/Og"
 
 export const config = {
   runtime: "experimental-edge",
@@ -28,8 +27,9 @@ export default async function handler(req: Request) {
         style={{
           width: 1200,
           height: 630,
-          border: "1px solid",
+          backgroundColor: "#fff",
           fontFamily: "Google Sans Mono",
+          display: "flex",
         }}
       >
         <div
@@ -49,14 +49,19 @@ export default async function handler(req: Request) {
               height: "360px !important",
             }}
           />
-          <div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             <h1
-              style={{ fontSize: "5rem", color: "#000", marginBottom: "2rem" }}
+              style={{
+                fontSize: "5rem",
+                color: "#000",
+                fontWeight: "bold",
+                marginBottom: "2rem",
+              }}
             >
-              {title}
+              Title
             </h1>
             <p style={{ fontSize: "2rem", color: "#888" }}>
-              {description} ({duration} min read)
+              Description (10 min read)
             </p>
           </div>
         </div>
