@@ -35,7 +35,7 @@
 .icon {
   color: var(--emphasized-foreground);
   height: 1.5em;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
   transform: translateY(20%);
   display: none;
   user-select: none;
