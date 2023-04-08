@@ -76,7 +76,7 @@ const Post = ({ source, meta }) => {
 
         <meta
           property="og:url"
-          content={`https://gantoreno.com/blog/${meta.slug}`}
+          content={`https://gantoreno.com/${meta.slug}`}
         />
         <meta property="og:type" content="website" />
         <meta name="title" property="og:title" content={pageTitle} />
