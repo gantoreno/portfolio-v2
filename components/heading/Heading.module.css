@@ -1,3 +1,7 @@
+.wrapper   {
+  margin-bottom: var(--spacing-minor);
+}
+
 .heading,
 .heading a {
   font-weight: bold;
@@ -6,6 +10,11 @@
   margin-top: var(--spacing-major);
   font-size: inherit;
   position: relative;
+}
+
+.heading a {
+  margin-bottom: 0;
+  width: fit-content;
 }
 
 .inline {
@@ -25,14 +34,14 @@
 
 .icon {
   color: var(--emphasized-foreground);
-  height: 100%;
-  position: absolute;
+  height: 1.5em;
+  margin-left: 1rem;
+  transform: translateY(20%);
   display: none;
   user-select: none;
-  right: 0;
 }
 
-.heading:has(a):hover .icon {
+.heading:has(a) a:hover .icon {
   display: initial;
 }
 
@@ -71,5 +80,4 @@
 
 .linkable {
   display: block;
-  padding-right: 1em;
 }
