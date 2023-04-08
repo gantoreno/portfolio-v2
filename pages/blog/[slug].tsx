@@ -74,10 +74,7 @@ const Post = ({ source, meta }) => {
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.tags.join(", ").toLowerCase()} />
 
-        <meta
-          property="og:url"
-          content={`https://gantoreno.com/${meta.slug}`}
-        />
+        <meta property="og:url" content={`https://gantoreno.com${meta.slug}`} />
         <meta property="og:type" content="website" />
         <meta name="title" property="og:title" content={pageTitle} />
         <meta
@@ -95,7 +92,7 @@ const Post = ({ source, meta }) => {
         <meta property="twitter:domain" content="gantoreno.com" />
         <meta
           property="twitter:url"
-          content={`https://gantoreno.com/${meta.slug}`}
+          content={`https://gantoreno.com${meta.slug}`}
         />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={meta.description} />
