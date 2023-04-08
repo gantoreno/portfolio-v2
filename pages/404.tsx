@@ -8,7 +8,7 @@ import Link from "../components/link/Link"
 import Paragraph from "../components/paragraph/Paragraph"
 import Spacer from "../components/spacer/Spacer"
 
-import avatarSad from "../assets/img/avatar-sad.png"
+import avatarSad from "../assets/img/avatar-sad.webp"
 
 export default function Custom404() {
   return (
