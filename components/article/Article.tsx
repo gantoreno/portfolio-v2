@@ -2,7 +2,7 @@ import Image, { ImageProps } from "next/image"
 import slugify from "slugify"
 import Grid from "../grid/Grid"
 
-import Paragraph from "../pragraph/Paragraph"
+import Paragraph from "../paragraph/Paragraph"
 import Spacer from "../spacer/Spacer"
 
 import styles from "./Article.module.css"

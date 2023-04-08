@@ -10,7 +10,7 @@ import Figure from "../../components/figure/Figure"
 import Header from "../../components/header/Header"
 import Heading from "../../components/heading/Heading"
 import Link from "../../components/link/Link"
-import Paragraph from "../../components/pragraph/Paragraph"
+import Paragraph from "../../components/paragraph/Paragraph"
 import Quote from "../../components/quote/Quote"
 import Spacer from "../../components/spacer/Spacer"
 

@@ -5,7 +5,7 @@ import slugify from "slugify"
 import Article from "../../components/article/Article"
 import Header from "../../components/header/Header"
 import Heading from "../../components/heading/Heading"
-import Paragraph from "../../components/pragraph/Paragraph"
+import Paragraph from "../../components/paragraph/Paragraph"
 import Section from "../../components/section/Section"
 
 import { getPostsWithMetadata, PostMetadata } from "../../lib/mdx"

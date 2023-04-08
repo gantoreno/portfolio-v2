@@ -5,7 +5,7 @@ import Center from "../components/center/Center"
 import Container from "../components/container/Container"
 import Heading from "../components/heading/Heading"
 import Link from "../components/link/Link"
-import Paragraph from "../components/pragraph/Paragraph"
+import Paragraph from "../components/paragraph/Paragraph"
 import Spacer from "../components/spacer/Spacer"
 
 import avatarSad from "../assets/img/avatar-sad.png"

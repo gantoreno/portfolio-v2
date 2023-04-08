@@ -1,6 +1,6 @@
 import Link from "../link/Link"
 
-import Paragraph from "../pragraph/Paragraph"
+import Paragraph from "../paragraph/Paragraph"
 
 import styles from "./Repository.module.css"
 

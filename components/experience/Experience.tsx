@@ -1,6 +1,6 @@
 import classNames from "classnames"
 
-import Paragraph from "../pragraph/Paragraph"
+import Paragraph from "../paragraph/Paragraph"
 
 import styles from "./Experience.module.css"
 

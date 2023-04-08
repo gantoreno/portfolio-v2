@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image"
 
 import Grid from "../grid/Grid"
 import Link from "../link/Link"
-import Paragraph from "../pragraph/Paragraph"
+import Paragraph from "../paragraph/Paragraph"
 
 import styles from "./Project.module.css"
 
