@@ -88,7 +88,7 @@ const Post = ({ source, meta }) => {
         <meta
           name="image"
           property="og:image"
-          content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}?latest`}
+          content={`https://gantoreno.com/api/og?title=${meta.title}&description=${meta.description}&duration=${meta.duration}`}
         />
 
         <meta name="twitter:card" content="summary_large_image" />
