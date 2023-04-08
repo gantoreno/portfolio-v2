@@ -42,7 +42,7 @@ const Heading: React.FC<HeadingProps> = ({
         <>
           <BiLink className={styles.icon} size={`${2.5 - level * 0.25}rem`} />
           <Link href={`#${slug}`}>
-            <a>{children}</a>
+            <a className={styles.linkable}>{children}</a>
           </Link>
         </>
       ) : (

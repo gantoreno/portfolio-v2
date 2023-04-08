@@ -68,3 +68,8 @@
 .heading.level-6 {
   font-size: var(--font-size-heading-6);
 }
+
+.linkable {
+  display: block;
+  padding-right: 1em;
+}
