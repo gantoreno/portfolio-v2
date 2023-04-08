@@ -40,15 +40,10 @@ const Heading: React.FC<HeadingProps> = ({
     >
       {linkable ? (
         <Link className={styles.wrapper} href={`#${slug}`}>
-          <>
-            <a className={styles.linkable}>
-              {children}
-              <BiLink
-                className={styles.icon}
-                size={`${2.5 - level * 0.25}rem`}
-              />
-            </a>
-          </>
+          <a className={styles.linkable}>
+            {children}
+            <BiLink className={styles.icon} size={`${2.5 - level * 0.25}rem`} />
+          </a>
         </Link>
       ) : (
         children
