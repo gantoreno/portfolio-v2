@@ -102,7 +102,7 @@ const Post = ({ source, meta }) => {
         ></meta>
       </Head>
       <Header>
-        <Article.Hero src={meta.image} />
+        <Article.Hero src={meta.image} alt={meta.title} />
         <Spacer bottom="var(--spacing-minor)">
           <Heading level={1} compact>
             {meta.title}
