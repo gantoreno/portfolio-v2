@@ -9,6 +9,7 @@ import Paragraph from "../../components/paragraph/Paragraph"
 import Section from "../../components/section/Section"
 
 import { getPostsWithMetadata, PostMetadata } from "../../lib/mdx"
+import { resolveImage } from "./[slug]"
 
 type BlogProps = {
   posts: PostMetadata[]
@@ -54,7 +55,7 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
               description={post.description}
               date={post.date}
               link={post.slug}
-              thumbnail={post.image}
+              thumbnail={resolveImage(post.image)}
               tags={post.tags}
             />
           ))

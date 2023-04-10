@@ -41,6 +41,7 @@ const Project: React.FC<ProjectProps> = ({
               objectFit="cover"
               loading="lazy"
               alt={alt}
+              placeholder="blur"
             />
           </div>
         </div>

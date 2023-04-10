@@ -56,6 +56,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
             alt={`Link to ${link}`}
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
           />
         </a>
         <div className={styles.content}>
@@ -89,6 +90,7 @@ const ArticleHero: React.FC<ImageProps> = ({ src, alt }) => {
         objectPosition="center"
         width="100%"
         height="50px"
+        placeholder="blur"
       />
     </Spacer>
   )

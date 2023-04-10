@@ -27,6 +27,7 @@ import sny from "../assets/img/sny.webp"
 import totalcom from "../assets/img/totalcom.webp"
 
 import { getPostsWithMetadata, PostMetadata } from "../lib/mdx"
+import { resolveImage } from "./blog/[slug]"
 
 type HomeProps = {
   posts: PostMetadata[]
@@ -335,7 +336,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
               description={post.description}
               date={post.date}
               link={post.slug}
-              thumbnail={post.image}
+              thumbnail={resolveImage(post.image)}
               tags={post.tags}
             />
           ))}

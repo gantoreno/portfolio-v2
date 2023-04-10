@@ -40,6 +40,7 @@ const FigureImage: React.FC<FigureImageProps> = ({
       })}
       layout="responsive"
       loading="lazy"
+      placeholder="blur"
       {...rest}
     />
   )

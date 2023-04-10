@@ -17,54 +17,61 @@ import Spacer from "../../components/spacer/Spacer"
 import { getPostBySlug, getPosts } from "../../lib/mdx"
 import { ImageProps } from "next/image"
 
-const components: Components = {
-  h1: ({ children }) => (
-    <Heading level={1} linkable>
-      {reactNodeToString(children)}
-    </Heading>
-  ),
-  h2: ({ children }) => (
-    <Heading level={2} linkable>
-      {reactNodeToString(children)}
-    </Heading>
-  ),
-  h3: ({ children }) => (
-    <Heading level={3} linkable>
-      {reactNodeToString(children)}
-    </Heading>
-  ),
-  p: ({ children }) => {
-    const isImage =
-      (children as React.ReactElement<any, React.JSXElementConstructor<any>>)
-        ?.type?.name === "img"
+export function resolveImage(src: string) {
+  return require(`../../assets/img/blog/${src}`).default
+}
 
-    return isImage ? (
-      <Figure>{children}</Figure>
-    ) : (
-      <Paragraph>{children}</Paragraph>
-    )
-  },
-  a: Link,
-  blockquote: Quote,
-  code: ({ children }) => <Code>{children}</Code>,
-  pre: ({ children }) => {
-    const code = reactNodeToString(children)
-    const language = (children as React.ReactElement)?.props?.className?.split(
-      "-"
-    )?.[1] as string
+// @ts-expect-error
+function buildComponents(meta): Components {
+  return {
+    h1: ({ children }) => (
+      <Heading level={1} linkable>
+        {reactNodeToString(children)}
+      </Heading>
+    ),
+    h2: ({ children }) => (
+      <Heading level={2} linkable>
+        {reactNodeToString(children)}
+      </Heading>
+    ),
+    h3: ({ children }) => (
+      <Heading level={3} linkable>
+        {reactNodeToString(children)}
+      </Heading>
+    ),
+    p: ({ children }) => {
+      const isImage =
+        (children as React.ReactElement<any, React.JSXElementConstructor<any>>)
+          ?.type?.name === "img"
 
-    return <Code.Block code={code} language={language} />
-  },
-  img: (props) => {
-    const { src, alt, ...rest } = props as ImageProps
+      return isImage ? (
+        <Figure>{children}</Figure>
+      ) : (
+        <Paragraph>{children}</Paragraph>
+      )
+    },
+    a: Link,
+    blockquote: Quote,
+    code: ({ children }) => <Code>{children}</Code>,
+    pre: ({ children }) => {
+      const code = reactNodeToString(children)
+      const language = (
+        children as React.ReactElement
+      )?.props?.className?.split("-")?.[1] as string
 
-    return (
-      <>
-        <Figure.Image src={src} alt={alt} {...rest} />
-        <Figure.Caption>{alt}</Figure.Caption>
-      </>
-    )
-  },
+      return <Code.Block code={code} language={language} />
+    },
+    img: (props) => {
+      const { src, alt, ...rest } = props as ImageProps
+
+      return (
+        <>
+          <Figure.Image src={resolveImage(src as string)} alt={alt} {...rest} />
+          <Figure.Caption>{alt}</Figure.Caption>
+        </>
+      )
+    },
+  }
 }
 
 // @ts-expect-error
@@ -107,7 +114,11 @@ const Post = ({ source, meta }) => {
         ></meta>
       </Head>
       <Header>
-        <Article.Hero src={meta.image} alt={meta.title} />
+        <Article.Hero
+          src={resolveImage(meta.image)}
+          alt={meta.title}
+          priority
+        />
         <Spacer bottom="var(--spacing-minor)">
           <Heading level={1} compact>
             {meta.title}
@@ -120,7 +131,7 @@ const Post = ({ source, meta }) => {
           </small>
         </Spacer>
       </Header>
-      <MDXRemote {...source} components={components} />
+      <MDXRemote {...source} components={buildComponents(meta)} />
       <Spacer top="var(--spacing-major)" height="2.3rem">
         {meta.tags.map((tag: string) => (
           <Article.Tag key={tag}>{tag}</Article.Tag>
@@ -135,6 +146,8 @@ export default Post
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   // @ts-expect-error
   const { source, meta } = await getPostBySlug(params.slug)
+
+  console.log(meta)
 
   return { props: { source, meta } }
 }
