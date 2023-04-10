@@ -54,7 +54,7 @@
 
   --text-foreground: var(--color-gray-4);
   --emphasized-foreground: var(--color-gray-0);
-  --disabled-foreground: var(--color-gray-8);
+  --disabled-foreground: var(--color-gray-6);
 
   --soft-foreground: var(--color-gray-1);
   --soft-background: var(--color-gray-14);
@@ -98,7 +98,7 @@ html:has(.dark-mode) {
 
   --text-foreground: var(--color-gray-11);
   --emphasized-foreground: var(--color-gray-15);
-  --disabled-foreground: var(--color-gray-7);
+  --disabled-foreground: var(--color-gray-9);
 
   --soft-foreground: var(--color-gray-14);
   --soft-background: var(--color-gray-1);

@@ -35,7 +35,13 @@ const Project: React.FC<ProjectProps> = ({
         </div>
         <div className={styles.pictureContainer}>
           <div className={styles.picture}>
-            <Image src={picture} layout="fill" objectFit="cover" alt={alt} />
+            <Image
+              src={picture}
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+              alt={alt}
+            />
           </div>
         </div>
       </Grid>
