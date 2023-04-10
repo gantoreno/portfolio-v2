@@ -68,24 +68,33 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             About me
           </Heading>
           <Paragraph>
-            I&apos;m a software engineer &amp; full-stack web developer
-            specialized in commercial projects, startup creations, corporate
-            identity, and personal websites. My job is to bring ideas to life
-            through dynamic client-developer experiences, working as a team to
-            transform amazing ideas into exceptional realities.
+            As a highly experienced senior software engineer and technical
+            leader, I&apos;ve dedicated my career to creating exceptional
+            digital experiences for clients ranging from startups to established
+            businesses. My expertise lies in full-stack web development and
+            commercial application creation, with a focus on building scalable,
+            secure, and performant solutions that meet the needs of modern
+            businesses.
           </Paragraph>
           <Paragraph>
-            When I&apos;m not developing commercial applications, I&apos;m
-            working on personal &amp; open source projects, as well as mentoring
-            beginner programmers and students with an awesome team at{" "}
+            In addition to my professional work, I&apos;m also deeply committed
+            to open source projects and mentoring beginner programmers. I&apos;m
+            an active member of{" "}
             <Link href="https://www.electrichive.org/" target="_blank">
               The Electric Hive
             </Link>
-            ; but the most important thing is, I&apos;m always discovering,
-            learning, and improving, one day at a time.
+            , where I lead a team of developers in creating innovative solutions
+            and providing mentorship and guidance to up-and-coming programmers.
           </Paragraph>
           <Paragraph>
-            Want to learn more about me? Have a look at my{" "}
+            Through my years of experience, I&apos;ve gained a deep
+            understanding of the latest technologies and trends in the industry,
+            and I&apos;m always eager to discover and learn new ways to improve
+            my craft. If you&apos;re looking for a seasoned technical leader
+            with a passion for excellence, look no further than me.
+          </Paragraph>
+          <Paragraph>
+            Want to know more? Have a look at my{" "}
             <Link href="https://linkedin.com/in/gantoreno" target="_blank">
               LinkedIn
             </Link>
@@ -97,9 +106,10 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
             Work &amp; projects
           </Heading>
           <Paragraph>
-            For the past 3+ years, I&apos;ve been working really close to known
-            companies from around the world, doing web consulting &amp; project
-            assessments. Here&apos;s a brief overview of my journey as a
+            For the past couple of years, I&apos;ve been working really close to
+            known companies from around the world, doing web consulting &amp;
+            project assessments, or just belonging to an awesome team of
+            developers. Here&apos;s a brief overview of my journey as a
             developer:
           </Paragraph>
           <Timeline>
