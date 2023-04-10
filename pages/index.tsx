@@ -189,7 +189,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           </Heading>
           <Paragraph>
             These are some of the most remarkable projects I&apos;ve had the
-            fortune to develop and see in action:
+            fortune to develop (or contribute to) and see in action:
           </Paragraph>
           <Project
             title="SNY"
