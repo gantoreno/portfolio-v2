@@ -5,10 +5,10 @@ export const config = {
 }
 
 const fontRegular = fetch(
-  new URL("../../fonts/Product Sans Regular.ttf", import.meta.url)
+  new URL("../../../fonts/Product Sans Regular.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer())
 const fontBold = fetch(
-  new URL("../../fonts/Product Sans Bold.ttf", import.meta.url)
+  new URL("../../../fonts/Product Sans Bold.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 export default async function handler(req: Request) {

@@ -22,15 +22,15 @@ export type PostMetadata = {
 
 export const getPosts = async () => {
   return fs
-    .readdirSync(path.join(root, "articles"))
+    .readdirSync(path.join(root, "src", "articles"))
     .map((filename) => filename.split("-").slice(1, 100).join("-"))
 }
 
 export const getPostBySlug = async (slug: string) => {
-  const posts = fs.readdirSync(path.join(root, "articles"))
+  const posts = fs.readdirSync(path.join(root, "src", "articles"))
   const post = posts.filter((post) => post.includes(slug))[0]
 
-  const mdx = fs.readFileSync(path.join(root, "articles", post), "utf-8")
+  const mdx = fs.readFileSync(path.join(root, "src", "articles", post), "utf-8")
 
   const { data, content } = matter(mdx)
 

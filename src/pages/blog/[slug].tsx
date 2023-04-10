@@ -60,7 +60,7 @@ const components: Components = {
 
     return (
       <>
-        <Figure.Image src={src ?? ""} alt={alt} {...rest} />
+        <Figure.Image src={src} alt={alt} {...rest} />
         <Figure.Caption>{alt}</Figure.Caption>
       </>
     )
