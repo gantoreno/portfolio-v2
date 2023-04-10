@@ -34,7 +34,12 @@ export const getPostBySlug = async (slug: string) => {
 
   const { data, content } = matter(mdx)
 
-  const source = await serialize(content, {})
+  const source = await serialize(content, {
+    mdxOptions: {
+      // @ts-expect-error
+      rehypePlugins: [[imageSize, { dir: `src/assets/img/blog/` }]],
+    },
+  })
   const duration = getReadingTime(content)
   const date = DateTime.fromISO(
     new Date(data.date).toISOString()

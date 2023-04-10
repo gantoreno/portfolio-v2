@@ -147,8 +147,6 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
   // @ts-expect-error
   const { source, meta } = await getPostBySlug(params.slug)
 
-  console.log(meta)
-
   return { props: { source, meta } }
 }
 
