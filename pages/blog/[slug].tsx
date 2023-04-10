@@ -15,6 +15,7 @@ import Quote from "../../components/quote/Quote"
 import Spacer from "../../components/spacer/Spacer"
 
 import { getPostBySlug, getPosts } from "../../lib/mdx"
+import { ImageProps } from "next/image"
 
 const components: Components = {
   h1: ({ children }) => (
@@ -54,12 +55,16 @@ const components: Components = {
 
     return <Code.Block code={code} language={language} />
   },
-  img: ({ src, alt }) => (
-    <>
-      <Figure.Image src={src} alt={alt} />
-      <Figure.Caption>{alt}</Figure.Caption>
-    </>
-  ),
+  img: (props) => {
+    const { src, alt, ...rest } = props as ImageProps
+
+    return (
+      <>
+        <Figure.Image src={src ?? ""} alt={alt} {...rest} />
+        <Figure.Caption>{alt}</Figure.Caption>
+      </>
+    )
+  },
 }
 
 // @ts-expect-error

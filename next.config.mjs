@@ -2,6 +2,7 @@ import remarkGfm from "remark-gfm"
 import remarkFrontmatter from "remark-frontmatter"
 import remarkMdxFrontmatter from "remark-mdx-frontmatter"
 import mdx from "@next/mdx"
+import imageSize from "rehype-img-size"
 
 const withMDX = mdx({
   extension: /\.mdx?$/,
@@ -10,7 +11,7 @@ const withMDX = mdx({
     // as the package is ESM only
     // https://github.com/remarkjs/remark-gfm#install
     remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
-    rehypePlugins: [],
+    rehypePlugins: [[imageSize, { dir: "public" }]],
     // If you use `MDXProvider`, uncomment the following line.
     // providerImportSource: "@mdx-js/react",
   },

@@ -21,7 +21,7 @@ const Figure: React.FC<FigureProps> = ({ children, compact = false }) => {
   )
 }
 
-type FigureImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+type FigureImageProps = ImageProps & {
   full?: boolean
 }
 
@@ -29,14 +29,18 @@ const FigureImage: React.FC<FigureImageProps> = ({
   src,
   alt,
   full = false,
+  ...rest
 }) => {
   return (
-    <img
-      src={src}
+    <Image
+      src={src ?? ""}
       alt={alt}
       className={classNames(styles.image, {
         [styles.full]: full,
       })}
+      layout="responsive"
+      loading="lazy"
+      {...rest}
     />
   )
 }

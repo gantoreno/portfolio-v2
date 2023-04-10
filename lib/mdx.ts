@@ -3,6 +3,7 @@ import matter from "gray-matter"
 import { DateTime } from "luxon"
 import { serialize } from "next-mdx-remote/serialize"
 import path from "path"
+import imageSize from "rehype-img-size"
 
 import { getReadingTime } from "./reading"
 
@@ -33,7 +34,12 @@ export const getPostBySlug = async (slug: string) => {
 
   const { data, content } = matter(mdx)
 
-  const source = await serialize(content, {})
+  const source = await serialize(content, {
+    mdxOptions: {
+      // @ts-expect-error
+      rehypePlugins: [[imageSize, { dir: "public" }]],
+    },
+  })
   const duration = getReadingTime(content)
   const date = DateTime.fromISO(
     new Date(data.date).toISOString()

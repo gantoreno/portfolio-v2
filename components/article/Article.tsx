@@ -84,6 +84,7 @@ const ArticleHero: React.FC<ImageProps> = ({ src, alt }) => {
         alt={alt}
         className={styles.hero}
         layout="responsive"
+        loading="lazy"
         objectFit="cover"
         objectPosition="center"
         width="100%"
