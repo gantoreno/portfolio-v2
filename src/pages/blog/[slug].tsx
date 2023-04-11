@@ -75,7 +75,7 @@ function buildComponents(meta): Components {
 }
 
 // @ts-expect-error
-const Post = ({ source, meta }) => {
+export default function Post({ source, meta }) {
   const pageTitle = `Gabriel Moreno - ${meta.title}`
 
   return (
@@ -140,8 +140,6 @@ const Post = ({ source, meta }) => {
     </Article>
   )
 }
-
-export default Post
 
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   // @ts-expect-error

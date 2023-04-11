@@ -29,7 +29,7 @@ const filterPostsByTags = (posts: PostMetadata[], tags: string[]) => {
   )
 }
 
-const Blog: NextPage<BlogProps> = ({ posts }) => {
+export default function Blog({ posts }: BlogProps) {
   const { query } = useRouter()
 
   const tags = parseTags(query.tag ?? [])
@@ -66,8 +66,6 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
     </>
   )
 }
-
-export default Blog
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const posts = await getPostsWithMetadata()

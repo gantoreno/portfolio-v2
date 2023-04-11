@@ -33,7 +33,7 @@ type HomeProps = {
   posts: PostMetadata[]
 }
 
-const Home: NextPage<HomeProps> = ({ posts }) => {
+export default function Home({ posts }: HomeProps) {
   return (
     <>
       <Head>
@@ -345,8 +345,6 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
     </>
   )
 }
-
-export default Home
 
 export async function getStaticProps() {
   const posts = await getPostsWithMetadata()
