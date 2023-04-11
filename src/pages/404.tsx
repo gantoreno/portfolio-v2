@@ -21,7 +21,14 @@ export default function Custom404() {
           <div>
             <Spacer top="7rem" bottom="2rem">
               <Center axis="horizontal">
-                <Image src={avatarSad} alt="Avatar" width={300} height={300} />
+                <Image
+                  src={avatarSad}
+                  alt="Avatar"
+                  width={300}
+                  height={300}
+                  loading="lazy"
+                  placeholder="blur"
+                />
               </Center>
             </Spacer>
             <Center axis="horizontal">
