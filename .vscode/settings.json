@@ -1,0 +1,9 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "src/articles/001-the-first-four-months-reflections-on-being-a-tech-lead.mdx"
+    }
+  ]
+}
