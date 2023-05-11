@@ -59,14 +59,7 @@ export default function Home({ posts }: HomeProps) {
             </div>
           </Center>
           <Center axis="vertical">
-            <Image
-              src={avatar}
-              alt="Avatar"
-              width={180}
-              height={180}
-              loading="lazy"
-              placeholder="blur"
-            />
+            <Image src={avatar} alt="Avatar" width={180} height={180} />
           </Center>
         </Grid>
       </Header>
