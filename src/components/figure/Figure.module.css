@@ -9,7 +9,7 @@
   position: relative;
   width: 100% !important;
   height: auto !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .full {
