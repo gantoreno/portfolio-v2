@@ -1,10 +1,11 @@
-import Image, { StaticImageData } from "next/image"
+import type { StaticImageData } from "next/image"
 
 import Grid from "../grid/Grid"
 import Link from "../link/Link"
 import Paragraph from "../paragraph/Paragraph"
 
 import styles from "./Project.module.css"
+import Figure from "../figure/Figure"
 
 type ProjectProps = {
   title: string
@@ -35,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({
         </div>
         <div className={styles.pictureContainer}>
           <div className={styles.picture}>
-            <Image
+            <Figure.Image
               src={picture}
               layout="fill"
               objectFit="cover"

@@ -1,11 +1,11 @@
-import Image, { ImageProps } from "next/image"
+import type { ImageProps } from "next/image"
 import slugify from "slugify"
 import Grid from "../grid/Grid"
 
-import Paragraph from "../paragraph/Paragraph"
 import Spacer from "../spacer/Spacer"
 
 import styles from "./Article.module.css"
+import Figure from "../figure/Figure"
 
 type ArticleProps = React.HTMLAttributes<HTMLDivElement>
 
@@ -50,7 +50,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
     <article className={styles.container}>
       <Grid columns={[1, 2]}>
         <a href={link} className={styles.thumbnailContainer}>
-          <Image
+          <Figure.Image
             className={styles.thumbnail}
             src={thumbnail}
             alt={`Link to ${link}`}
@@ -80,7 +80,7 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
 const ArticleHero: React.FC<ImageProps> = ({ src, alt }) => {
   return (
     <Spacer bottom="var(--spacing-minor)">
-      <Image
+      <Figure.Image
         src={src}
         alt={alt}
         className={styles.hero}
