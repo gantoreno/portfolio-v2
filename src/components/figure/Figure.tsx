@@ -32,17 +32,19 @@ const FigureImage: React.FC<FigureImageProps> = ({
   ...rest
 }) => {
   return (
-    <Image
-      src={src ?? ""}
-      alt={alt}
-      className={classNames(styles.image, {
-        [styles.full]: full,
-      })}
-      layout="responsive"
-      loading="lazy"
-      placeholder="blur"
-      {...rest}
-    />
+    <div className={styles.imageContainer}>
+      <Image
+        src={src ?? ""}
+        alt={alt}
+        className={classNames(styles.image, {
+          [styles.full]: full,
+        })}
+        layout="responsive"
+        loading="lazy"
+        placeholder="blur"
+        {...rest}
+      />
+    </div>
   )
 }
 

@@ -4,12 +4,15 @@
   margin-bottom: 2rem;
 }
 
-.image {
+.imageContainer {
   border-radius: var(--border-radius) !important;
+  overflow: hidden !important;
+}
+
+.image {
   position: relative;
   width: 100% !important;
   height: auto !important;
-  overflow: hidden !important;
 }
 
 .full {
