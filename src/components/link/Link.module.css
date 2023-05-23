@@ -2,8 +2,8 @@
   display: inline-block;
   color: var(--emphasized-foreground);
   position: relative;
+  text-decoration: none;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
   font-size: inherit;
   line-height: var(--line-height);
 }

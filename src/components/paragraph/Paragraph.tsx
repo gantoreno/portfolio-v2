@@ -40,14 +40,17 @@ const ExpandableParagraph: React.FC<ExpandableParagraphProps> = ({
     <p className={styles.expandable}>
       {showReadMore ? text.slice(0, at) + "..." : text}
       {shouldWrap && !disabled && (
-        <button
-          onClick={toggleReadMore}
-          className={classNames(styles.showMore, {
-            [styles.readLess]: !showReadMore,
-          })}
-        >
-          {showReadMore ? "read more" : "show less"}
-        </button>
+        <>
+          {" "}
+          <span
+            onClick={toggleReadMore}
+            className={classNames(styles.showMore, {
+              [styles.readLess]: !showReadMore,
+            })}
+          >
+            {showReadMore ? "read more" : "show less"}
+          </span>
+        </>
       )}
     </p>
   )

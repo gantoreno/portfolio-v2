@@ -118,7 +118,7 @@ export default function Home({ posts }: HomeProps) {
                 company="Zemoga, Inc"
                 position="Senior Frontend Engineer"
                 year="Jan 2023"
-                description="I performed as the technical leader for the SNY TV project, built scalable websites & web applications with Next.js, TypeScript, TailwindCSS & AWS, developed highly performant interfaces & custom components, and helped with analyzing & unblocking tasks & requirements across the entire team."
+                description="I performed as the technical leader for the SNY TV project, built scalable websites & web applications with Next.js, TypeScript, TailwindCSS & AWS, developed highly performant interfaces & custom components, and helped with analyzing & unblocking tasks & requirements."
               />
             </Timeline.Item>
             <Timeline.Item>
