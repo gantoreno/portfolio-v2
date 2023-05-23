@@ -6,6 +6,7 @@ import Spacer from "../spacer/Spacer"
 
 import styles from "./Article.module.css"
 import Figure from "../figure/Figure"
+import Link from "next/link"
 
 type ArticleProps = React.HTMLAttributes<HTMLDivElement>
 
@@ -21,9 +22,11 @@ const ArticleTag: React.FC<ArticleTagProps> = ({ children }) => {
   const slug = slugify(children).toLowerCase()
 
   return (
-    <a href={`/blog?tag=${slug}`} className={styles.tags}>
-      <span className={styles.tag}>{children}</span>
-    </a>
+    <Link href={`/blog?tag=${slug}`} className={styles.tags}>
+      <a>
+        <span className={styles.tag}>{children}</span>
+      </a>
+    </Link>
   )
 }
 
@@ -49,25 +52,29 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
   return (
     <article className={styles.container}>
       <Grid columns={[1, 2]}>
-        <a href={link} className={styles.thumbnailContainer}>
-          <Figure.Image
-            className={styles.thumbnail}
-            src={thumbnail}
-            alt={`Link to ${link}`}
-            layout="fill"
-            objectFit="cover"
-            placeholder="blur"
-          />
-        </a>
-        <div className={styles.content}>
-          <a href={link}>
-            <div className={styles.title}>
-              <strong>{title}</strong>
-            </div>
-            <div className={styles.date}>
-              {date} ({duration} min read)
-            </div>
+        <Link href={link} className={styles.thumbnailContainer}>
+          <a>
+            <Figure.Image
+              className={styles.thumbnail}
+              src={thumbnail}
+              alt={`Link to ${link}`}
+              layout="fill"
+              objectFit="cover"
+              placeholder="blur"
+            />
           </a>
+        </Link>
+        <div className={styles.content}>
+          <Link href={link} className={styles.link}>
+            <a>
+              <div className={styles.title}>
+                <strong>{title}</strong>
+              </div>
+              <div className={styles.date}>
+                {date} ({duration} min read)
+              </div>
+            </a>
+          </Link>
           <div className={styles.tags}>
             {tags.length > 0 && <ArticleTag>{tags[0]}</ArticleTag>}
           </div>
