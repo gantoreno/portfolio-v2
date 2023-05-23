@@ -3,7 +3,6 @@ import { default as NextLink } from "next/link"
 import { BiMoon, BiSun } from "react-icons/bi"
 
 import useDarkMode from "../../hooks/useDarkMode"
-import usePageLoad from "../../hooks/usePageLoad"
 import Center from "../center/Center"
 import Container from "../container/Container"
 import Link from "../link/Link"
@@ -29,12 +28,7 @@ const Logo: React.FC = () => {
 }
 
 const Navbar: React.FC = () => {
-  const isLoaded = usePageLoad()
   const [darkMode, toggleDarkMode] = useDarkMode()
-
-  if (!isLoaded) {
-    return null
-  }
 
   const Icon = darkMode ? BiSun : BiMoon
 
