@@ -2,7 +2,6 @@
   padding: 1rem;
   background: var(--soft-background);
   border-radius: var(--border-radius);
-  border-left: var(--border-radius) solid var(--foreground);
   display: flex;
   gap: 1rem;
   margin-bottom: var(--spacing-minor);
