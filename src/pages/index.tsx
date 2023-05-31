@@ -283,6 +283,11 @@ export default function Home({ posts }: HomeProps) {
                 url="https://github.com/gantoreno/pytop"
               />
               <Repository
+                name="Hoofprint"
+                description="🐴 A simple Node.js logger"
+                url="https://github.com/gantoreno/hoofprint"
+              />
+              <Repository
                 name="Muso"
                 description="🎧 A Telegram bot that listens to voice messages, and recognizes music"
                 url="https://github.com/gantoreno/muso"
